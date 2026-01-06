@@ -1,0 +1,964 @@
+Plant_ID,Production_Date,Shift,Planned_Units,Units_Produced,Defective_Units,Defect_Type,Supplier_ID,Raw_Material,Lead_Time_Days,Downtime_Minutes,Downtime_Reason,Inventory_Level,Reorder_Level,Production_Cost_Per_Unit,Delivery_Delay_Days,Defect_Rate,Production_Efficiency,Inventory_Status
+R_Aurangabad,23-02-2024,A,228,188,14,Welding,ZF,Engine_Parts,11,104,Material_Shortage,255,586,52323.64,2,7.45,82.46,Below Reorder
+R_Chakan,17-09-2024,C,190,181,4,Painting,Valeo,Electronics,15,43,Material_Shortage,529,376,48606.63,1,2.21,95.26,Optimal
+R_Pune,13-09-2024,B,197,182,13,Assembly,Continental,Electronics,5,117,Material_Shortage,845,405,79317.2,0,7.14,92.39,Optimal
+R_Aurangabad,11-04-2024,A,212,193,13,Assembly,Continental,Electronics,8,48,Machine_Failure,266,434,61005.49,2,6.74,91.04,Below Reorder
+R_Chakan,19-10-2024,A,197,159,0,Painting,ZF,Body_Parts,6,94,Maintenance,476,411,62707.8,3,0.0,80.71,Optimal
+R_Pune,26-07-2024,B,239,212,4,Welding,ZF,Gearbox,6,111,Machine_Failure,333,372,78328.96,5,1.89,88.7,Below Reorder
+R_Chakan,08-10-2024,C,231,226,7,Welding,Mahindra_Suppliers,Electronics,2,40,Power_Failure,826,475,60877.63,2,3.1,97.84,Optimal
+R_Pune,14-01-2024,C,239,234,13,No Defect,Valeo,Gearbox,2,145,Maintenance,747,594,49728.58,0,5.56,97.91,Optimal
+R_Aurangabad,02-06-2024,A,191,178,11,Welding,Bosch,Electronics,14,63,Material_Shortage,368,333,77790.53,0,6.18,93.19,Optimal
+R_Pune,05-01-2024,C,227,189,8,No Defect,Valeo,Electronics,6,22,Machine_Failure,668,560,60990.12,2,4.23,83.26,Optimal
+R_Pune,11-01-2024,C,195,178,13,Painting,Continental,Gearbox,5,1,Machine_Failure,286,477,73099.86,5,7.3,91.28,Below Reorder
+R_Chakan,22-02-2024,A,235,211,3,Electrical,Bosch,Engine_Parts,2,94,Material_Shortage,1005,337,53144.21,2,1.42,89.79,Optimal
+R_Pune,30-06-2024,A,202,187,3,Electrical,Valeo,Body_Parts,14,31,Material_Shortage,356,599,67244.34,4,1.6,92.57,Below Reorder
+R_Chakan,28-02-2024,B,236,213,7,Painting,Bosch,Electronics,12,180,Power_Failure,695,384,79316.24,3,3.29,90.25,Optimal
+R_Pune,26-09-2024,A,238,221,5,Welding,Bosch,Gearbox,12,10,Material_Shortage,371,526,75624.04,4,2.26,92.86,Below Reorder
+R_Aurangabad,03-01-2024,B,237,237,4,Painting,Valeo,Electronics,9,13,Maintenance,710,333,61060.48,3,1.69,100.0,Optimal
+R_Pune,12-10-2024,B,233,223,11,Welding,Bosch,Engine_Parts,13,13,Maintenance,1149,341,69304.91,0,4.93,95.71,Optimal
+R_Pune,12-08-2024,B,243,231,9,Electrical,Bosch,Engine_Parts,2,111,Material_Shortage,247,407,79090.13,1,3.9,95.06,Below Reorder
+R_Aurangabad,24-03-2024,A,188,159,10,Electrical,Continental,Electronics,12,35,Maintenance,674,377,57600.06,0,6.29,84.57,Optimal
+R_Chakan,05-06-2024,A,198,159,13,No Defect,Continental,Gearbox,8,159,Machine_Failure,241,475,79846.3,5,8.18,80.3,Below Reorder
+R_Pune,10-08-2024,A,212,202,3,Painting,Mahindra_Suppliers,Electronics,14,163,Machine_Failure,951,344,45497.12,2,1.49,95.28,Optimal
+R_Chakan,08-10-2024,B,180,172,14,Painting,Mahindra_Suppliers,Electronics,11,24,Maintenance,276,376,69739.3,1,8.14,95.56,Below Reorder
+R_Aurangabad,19-08-2024,C,254,224,3,No Defect,ZF,Body_Parts,2,58,Power_Failure,617,490,60016.28,4,1.34,88.19,Optimal
+R_Chakan,11-10-2024,A,227,197,11,Welding,Valeo,Engine_Parts,10,146,Power_Failure,466,441,77822.02,4,5.58,86.78,Optimal
+R_Chakan,02-09-2024,A,221,209,10,No Defect,ZF,Electronics,13,144,Machine_Failure,1008,378,69539.73,0,4.78,94.57,Optimal
+R_Pune,16-06-2024,B,260,223,4,Electrical,Mahindra_Suppliers,Body_Parts,8,32,Maintenance,610,568,52839.94,3,1.79,85.77,Optimal
+R_Aurangabad,04-06-2024,A,186,174,4,No Defect,Valeo,Body_Parts,14,88,Material_Shortage,348,505,47842.67,1,2.3,93.55,Below Reorder
+R_Chakan,19-07-2024,A,250,244,0,Electrical,Continental,Engine_Parts,10,97,Material_Shortage,1155,404,49592.73,0,0.0,97.6,Optimal
+R_Chakan,31-08-2024,A,241,211,6,Electrical,Bosch,Gearbox,2,151,Maintenance,298,574,51487.17,1,2.84,87.55,Below Reorder
+R_Pune,30-08-2024,B,214,194,10,Assembly,Bosch,Electronics,8,53,Maintenance,270,563,67641.82,3,5.15,90.65,Below Reorder
+R_Aurangabad,03-06-2024,C,191,182,3,Painting,Valeo,Engine_Parts,4,162,Machine_Failure,939,585,71760.42,2,1.65,95.29,Optimal
+R_Chakan,28-08-2024,C,201,196,11,Electrical,ZF,Electronics,5,154,Material_Shortage,1157,533,78745.42,3,5.61,97.51,Optimal
+R_Aurangabad,09-06-2024,C,259,235,4,No Defect,Valeo,Body_Parts,4,132,Maintenance,468,510,63035.71,3,1.7,90.73,Below Reorder
+R_Chakan,27-05-2024,C,203,179,10,Electrical,Bosch,Electronics,6,16,Power_Failure,691,315,71985.11,2,5.59,88.18,Optimal
+R_Chakan,02-01-2024,C,260,221,10,No Defect,ZF,Electronics,4,6,Material_Shortage,699,479,55644.87,1,4.52,85.0,Optimal
+R_Pune,03-09-2024,A,244,234,14,No Defect,ZF,Body_Parts,2,40,Machine_Failure,670,396,57593.32,2,5.98,95.9,Optimal
+R_Aurangabad,28-07-2024,A,221,218,14,No Defect,Bosch,Engine_Parts,7,51,Maintenance,967,330,46427.18,3,6.42,98.64,Optimal
+R_Pune,25-08-2024,C,233,209,12,Welding,Valeo,Body_Parts,4,76,Power_Failure,406,502,68256.1,4,5.74,89.7,Below Reorder
+R_Chakan,12-06-2024,A,194,192,7,No Defect,Valeo,Engine_Parts,9,31,Maintenance,570,407,66657.12,0,3.65,98.97,Optimal
+R_Aurangabad,17-09-2024,C,243,205,5,Welding,Mahindra_Suppliers,Engine_Parts,13,55,Machine_Failure,1177,437,60493.72,0,2.44,84.36,Optimal
+R_Chakan,13-04-2024,A,205,199,4,Painting,Continental,Gearbox,13,154,Machine_Failure,1043,444,60930.9,1,2.01,97.07,Optimal
+R_Chakan,02-01-2024,C,232,202,9,Electrical,Continental,Engine_Parts,15,25,Power_Failure,334,353,64175.56,3,4.46,87.07,Below Reorder
+R_Pune,11-10-2024,A,198,178,0,No Defect,ZF,Gearbox,6,133,Power_Failure,658,587,54049.97,1,0.0,89.9,Optimal
+R_Pune,02-06-2024,B,218,203,7,Electrical,Bosch,Gearbox,12,36,Maintenance,316,433,64737.2,0,3.45,93.12,Below Reorder
+R_Chakan,13-01-2024,B,193,155,14,Assembly,ZF,Engine_Parts,14,21,Machine_Failure,1169,488,55114.58,1,9.03,80.31,Optimal
+R_Aurangabad,04-06-2024,B,252,251,6,No Defect,Bosch,Engine_Parts,8,25,Material_Shortage,840,535,78445.14,3,2.39,99.6,Optimal
+R_Chakan,23-09-2024,C,252,219,6,Electrical,Mahindra_Suppliers,Engine_Parts,8,127,Maintenance,482,590,65525.73,5,2.74,86.9,Below Reorder
+R_Chakan,15-06-2024,C,248,227,9,Electrical,Valeo,Gearbox,2,105,Power_Failure,420,462,47931.85,0,3.96,91.53,Below Reorder
+R_Chakan,12-10-2024,C,214,200,12,No Defect,Bosch,Gearbox,5,148,Power_Failure,488,431,74191.09,4,6.0,93.46,Optimal
+R_Pune,17-03-2024,C,212,190,13,Painting,Valeo,Body_Parts,13,152,Power_Failure,315,529,69344.27,5,6.84,89.62,Below Reorder
+R_Aurangabad,22-02-2024,C,240,223,0,Assembly,ZF,Body_Parts,10,5,Power_Failure,880,496,57184.13,5,0.0,92.92,Optimal
+R_Aurangabad,21-04-2024,C,236,231,1,No Defect,Bosch,Electronics,11,5,Machine_Failure,766,311,45248.46,3,0.43,97.88,Optimal
+R_Chakan,28-09-2024,A,247,231,1,Assembly,ZF,Electronics,3,103,Power_Failure,638,515,46412.85,1,0.43,93.52,Optimal
+R_Pune,10-10-2024,A,220,212,1,Painting,Bosch,Electronics,3,49,Material_Shortage,236,318,63525.5,0,0.47,96.36,Below Reorder
+R_Pune,04-01-2024,A,247,207,3,Assembly,Continental,Body_Parts,9,30,Material_Shortage,242,554,49221.01,3,1.45,83.81,Below Reorder
+R_Pune,25-04-2024,B,229,218,9,Assembly,Mahindra_Suppliers,Electronics,10,34,Machine_Failure,862,579,54027.97,1,4.13,95.2,Optimal
+R_Pune,18-08-2024,C,183,154,10,Painting,Mahindra_Suppliers,Body_Parts,15,24,Material_Shortage,745,388,57921.97,2,6.49,84.15,Optimal
+R_Chakan,16-10-2024,C,213,211,2,Electrical,Valeo,Body_Parts,15,66,Maintenance,991,513,52668.74,0,0.95,99.06,Optimal
+R_Chakan,22-09-2024,A,219,195,7,Painting,ZF,Electronics,7,138,Material_Shortage,1075,590,76298.45,1,3.59,89.04,Optimal
+R_Pune,27-08-2024,B,194,155,4,Assembly,ZF,Body_Parts,13,145,Material_Shortage,465,315,78148.78,3,2.58,79.9,Optimal
+R_Aurangabad,04-05-2024,A,188,148,2,Painting,Valeo,Gearbox,10,164,Power_Failure,632,532,66433.04,5,1.35,78.72,Optimal
+R_Pune,11-09-2024,B,242,221,10,Electrical,Bosch,Engine_Parts,3,52,Power_Failure,1129,404,61126.55,2,4.52,91.32,Optimal
+R_Aurangabad,17-10-2024,C,257,238,11,Electrical,Mahindra_Suppliers,Body_Parts,6,116,Machine_Failure,348,479,63894.31,3,4.62,92.61,Below Reorder
+R_Chakan,14-03-2024,C,243,243,7,Electrical,Valeo,Electronics,7,80,Maintenance,910,323,57793.93,1,2.88,100.0,Optimal
+R_Chakan,11-10-2024,B,215,175,5,Painting,Continental,Engine_Parts,3,132,Material_Shortage,739,330,46298.73,4,2.86,81.4,Optimal
+R_Chakan,17-07-2024,C,242,240,0,Electrical,Valeo,Body_Parts,7,172,Machine_Failure,640,349,70144.07,5,0.0,99.17,Optimal
+R_Pune,18-03-2024,B,227,224,0,Assembly,Bosch,Electronics,3,110,Power_Failure,592,334,58389.63,4,0.0,98.68,Optimal
+R_Pune,23-04-2024,C,233,225,12,Painting,Continental,Gearbox,14,6,Material_Shortage,1136,327,71421.69,0,5.33,96.57,Optimal
+R_Aurangabad,25-06-2024,C,214,199,4,Welding,ZF,Body_Parts,10,45,Maintenance,441,387,63372.85,5,2.01,92.99,Optimal
+R_Chakan,01-08-2024,C,240,228,15,Assembly,ZF,Body_Parts,14,102,Maintenance,954,422,69553.64,3,6.58,95.0,Optimal
+R_Pune,21-10-2024,B,187,169,8,Assembly,ZF,Electronics,5,12,Material_Shortage,829,383,51391.53,4,4.73,90.37,Optimal
+R_Pune,29-06-2024,B,246,233,4,No Defect,Valeo,Electronics,8,129,Machine_Failure,1045,540,55806.29,4,1.72,94.72,Optimal
+R_Pune,17-03-2024,B,238,199,12,Welding,ZF,Electronics,6,119,Power_Failure,837,322,53718.9,2,6.03,83.61,Optimal
+R_Aurangabad,22-05-2024,C,253,236,2,Assembly,ZF,Engine_Parts,4,129,Material_Shortage,770,435,57611.24,2,0.85,93.28,Optimal
+R_Chakan,01-05-2024,C,253,246,13,No Defect,Bosch,Gearbox,10,155,Maintenance,1017,567,47764.7,1,5.28,97.23,Optimal
+R_Aurangabad,21-07-2024,B,211,209,0,Painting,Valeo,Engine_Parts,2,73,Power_Failure,924,380,71761.73,1,0.0,99.05,Optimal
+R_Aurangabad,22-08-2024,A,203,193,6,No Defect,Continental,Gearbox,13,177,Machine_Failure,408,329,76564.92,0,3.11,95.07,Optimal
+R_Aurangabad,27-03-2024,C,245,231,7,Electrical,Bosch,Electronics,6,157,Maintenance,924,499,66894.1,0,3.03,94.29,Optimal
+R_Chakan,07-05-2024,A,202,170,13,Painting,Continental,Body_Parts,13,162,Machine_Failure,1056,582,63522.48,5,7.65,84.16,Optimal
+R_Aurangabad,26-03-2024,B,204,203,12,Welding,Mahindra_Suppliers,Gearbox,13,103,Maintenance,584,550,66016.2,1,5.91,99.51,Optimal
+R_Chakan,10-10-2024,A,185,161,14,Painting,ZF,Gearbox,14,100,Power_Failure,1105,598,48823.97,5,8.7,87.03,Optimal
+R_Aurangabad,03-05-2024,A,246,227,8,Assembly,Bosch,Electronics,4,48,Machine_Failure,349,475,52672.18,5,3.52,92.28,Below Reorder
+R_Aurangabad,15-02-2024,C,219,214,2,Welding,Continental,Electronics,2,111,Machine_Failure,1004,532,77005.93,3,0.93,97.72,Optimal
+R_Chakan,20-05-2024,A,236,202,2,Electrical,Valeo,Engine_Parts,8,22,Power_Failure,1096,472,73992.19,0,0.99,85.59,Optimal
+R_Chakan,13-04-2024,A,249,231,8,Welding,Continental,Gearbox,4,106,Material_Shortage,1010,498,60136.98,3,3.46,92.77,Optimal
+R_Pune,05-09-2024,C,219,219,10,Welding,Mahindra_Suppliers,Body_Parts,6,59,Material_Shortage,984,558,76694.07,2,4.57,100.0,Optimal
+R_Pune,11-01-2024,B,190,168,2,Assembly,ZF,Engine_Parts,9,158,Material_Shortage,489,556,70138.19,0,1.19,88.42,Below Reorder
+R_Pune,12-07-2024,A,231,230,1,Electrical,ZF,Engine_Parts,4,3,Machine_Failure,553,582,54519.55,4,0.43,99.57,Below Reorder
+R_Pune,05-10-2024,B,209,192,10,Assembly,Mahindra_Suppliers,Electronics,4,78,Power_Failure,397,348,45164.7,3,5.21,91.87,Optimal
+R_Aurangabad,08-08-2024,B,249,218,12,Electrical,Valeo,Gearbox,15,105,Power_Failure,223,546,50088.94,4,5.5,87.55,Below Reorder
+R_Pune,09-07-2024,A,195,186,11,Welding,Continental,Body_Parts,10,81,Maintenance,234,460,64093.45,2,5.91,95.38,Below Reorder
+R_Chakan,08-09-2024,A,221,187,15,No Defect,Valeo,Gearbox,8,31,Maintenance,382,418,63442.3,0,8.02,84.62,Below Reorder
+R_Pune,22-04-2024,C,209,194,6,Welding,Valeo,Body_Parts,9,159,Power_Failure,629,343,49722.69,2,3.09,92.82,Optimal
+R_Chakan,17-08-2024,C,204,181,6,Assembly,Mahindra_Suppliers,Engine_Parts,8,90,Machine_Failure,275,481,46270.92,3,3.31,88.73,Below Reorder
+R_Aurangabad,25-10-2024,B,235,221,3,Electrical,Mahindra_Suppliers,Electronics,3,151,Maintenance,726,374,68368.46,0,1.36,94.04,Optimal
+R_Aurangabad,15-10-2024,B,204,184,12,Painting,ZF,Electronics,2,77,Material_Shortage,674,446,58555.56,4,6.52,90.2,Optimal
+R_Chakan,08-02-2024,B,223,200,14,Assembly,Mahindra_Suppliers,Electronics,8,24,Machine_Failure,300,346,48340.63,3,7.0,89.69,Below Reorder
+R_Aurangabad,18-01-2024,A,217,206,14,Welding,Valeo,Body_Parts,2,164,Maintenance,372,480,66691.33,5,6.8,94.93,Below Reorder
+R_Aurangabad,06-07-2024,B,260,255,1,No Defect,Mahindra_Suppliers,Body_Parts,9,176,Maintenance,367,417,59880.12,0,0.39,98.08,Below Reorder
+R_Pune,17-04-2024,B,190,188,14,Assembly,Bosch,Body_Parts,12,15,Material_Shortage,576,591,48004.49,5,7.45,98.95,Below Reorder
+R_Pune,06-03-2024,B,207,206,12,No Defect,Bosch,Electronics,8,161,Maintenance,1092,337,49543.77,3,5.83,99.52,Optimal
+R_Chakan,25-10-2024,A,204,190,3,Assembly,Valeo,Electronics,2,97,Maintenance,807,474,67362.27,2,1.58,93.14,Optimal
+R_Aurangabad,14-08-2024,B,185,156,12,Welding,Mahindra_Suppliers,Body_Parts,13,74,Power_Failure,1131,478,67758.9,5,7.69,84.32,Optimal
+R_Aurangabad,21-02-2024,B,238,237,12,Welding,Mahindra_Suppliers,Electronics,11,146,Machine_Failure,362,345,62108.02,3,5.06,99.58,Optimal
+R_Pune,03-09-2024,C,197,159,15,Welding,ZF,Body_Parts,8,19,Machine_Failure,1094,437,61748.73,3,9.43,80.71,Optimal
+R_Chakan,18-09-2024,B,227,226,1,Welding,ZF,Body_Parts,9,64,Power_Failure,314,517,64529.9,3,0.44,99.56,Below Reorder
+R_Pune,14-05-2024,C,255,236,9,No Defect,Mahindra_Suppliers,Engine_Parts,9,153,Material_Shortage,1034,515,48204.83,1,3.81,92.55,Optimal
+R_Aurangabad,12-05-2024,C,246,228,4,Welding,Bosch,Engine_Parts,2,18,Maintenance,368,484,78352.6,2,1.75,92.68,Below Reorder
+R_Pune,07-02-2024,B,181,168,5,No Defect,Continental,Engine_Parts,7,74,Power_Failure,559,410,54292.81,2,2.98,92.82,Optimal
+R_Chakan,28-07-2024,A,223,205,15,No Defect,Continental,Engine_Parts,12,14,Maintenance,720,476,50757.12,3,7.32,91.93,Optimal
+R_Aurangabad,04-01-2024,C,195,186,11,Welding,ZF,Body_Parts,8,169,Maintenance,650,473,45036.87,3,5.91,95.38,Optimal
+R_Chakan,29-05-2024,C,250,215,4,Electrical,Bosch,Engine_Parts,9,4,Machine_Failure,721,315,48335.19,5,1.86,86.0,Optimal
+R_Pune,07-03-2024,C,248,211,11,Electrical,ZF,Gearbox,14,176,Material_Shortage,643,511,48827.6,1,5.21,85.08,Optimal
+R_Chakan,31-05-2024,A,235,220,4,Electrical,Continental,Gearbox,12,125,Machine_Failure,563,550,49630.96,4,1.82,93.62,Optimal
+R_Pune,23-05-2024,C,235,208,2,Electrical,Continental,Body_Parts,12,159,Material_Shortage,807,399,47582.43,1,0.96,88.51,Optimal
+R_Chakan,24-10-2024,B,238,208,15,No Defect,Bosch,Gearbox,15,164,Maintenance,368,519,70978.51,5,7.21,87.39,Below Reorder
+R_Aurangabad,31-01-2024,B,223,219,13,Electrical,Bosch,Engine_Parts,4,110,Power_Failure,222,353,72840.68,4,5.94,98.21,Below Reorder
+R_Pune,20-07-2024,C,184,155,15,Welding,Continental,Gearbox,2,96,Machine_Failure,710,392,66920.8,3,9.68,84.24,Optimal
+R_Pune,20-03-2024,C,251,237,6,Electrical,Valeo,Gearbox,5,45,Machine_Failure,677,322,67006.52,5,2.53,94.42,Optimal
+R_Pune,22-09-2024,A,193,179,15,Electrical,Continental,Engine_Parts,2,113,Maintenance,956,524,62069.09,1,8.38,92.75,Optimal
+R_Aurangabad,22-01-2024,C,214,175,12,Painting,Continental,Gearbox,8,15,Machine_Failure,486,558,51324.7,3,6.86,81.78,Below Reorder
+R_Aurangabad,28-02-2024,C,191,162,12,No Defect,Valeo,Electronics,9,134,Material_Shortage,258,337,46936.73,5,7.41,84.82,Below Reorder
+R_Aurangabad,08-09-2024,B,207,176,4,Electrical,Bosch,Engine_Parts,13,62,Material_Shortage,877,303,54086.24,5,2.27,85.02,Optimal
+R_Pune,02-10-2024,B,225,194,10,Assembly,Continental,Body_Parts,6,52,Maintenance,386,527,49643.82,2,5.15,86.22,Below Reorder
+R_Chakan,13-02-2024,C,215,208,8,Electrical,Valeo,Gearbox,2,119,Material_Shortage,780,555,54280.17,2,3.85,96.74,Optimal
+R_Chakan,16-03-2024,A,237,211,6,Electrical,Mahindra_Suppliers,Engine_Parts,15,95,Machine_Failure,544,538,79297.49,2,2.84,89.03,Optimal
+R_Aurangabad,21-08-2024,C,226,216,0,Welding,Valeo,Body_Parts,12,161,Maintenance,617,378,65223.31,3,0.0,95.58,Optimal
+R_Pune,06-06-2024,C,184,147,2,No Defect,Mahindra_Suppliers,Engine_Parts,12,40,Material_Shortage,499,333,48269.17,5,1.36,79.89,Optimal
+R_Chakan,24-03-2024,A,217,188,2,Welding,Mahindra_Suppliers,Engine_Parts,12,39,Material_Shortage,210,332,61848.06,0,1.06,86.64,Below Reorder
+R_Aurangabad,24-08-2024,A,187,166,6,Assembly,Mahindra_Suppliers,Electronics,6,137,Material_Shortage,1113,369,74873.34,4,3.61,88.77,Optimal
+R_Pune,04-04-2024,A,215,203,12,Painting,Valeo,Body_Parts,5,109,Power_Failure,989,485,65655.14,1,5.91,94.42,Optimal
+R_Chakan,24-06-2024,B,190,181,1,Electrical,Continental,Electronics,2,50,Maintenance,450,428,64151.81,0,0.55,95.26,Optimal
+R_Chakan,03-04-2024,C,208,189,10,No Defect,Continental,Gearbox,3,157,Material_Shortage,442,426,52990.18,0,5.29,90.87,Optimal
+R_Pune,03-09-2024,A,255,225,9,No Defect,Valeo,Engine_Parts,10,116,Power_Failure,597,362,79660.02,3,4.0,88.24,Optimal
+R_Pune,15-10-2024,B,248,241,7,Welding,Valeo,Engine_Parts,8,46,Material_Shortage,1192,411,63577.11,1,2.9,97.18,Optimal
+R_Pune,01-04-2024,A,188,158,0,Welding,Continental,Engine_Parts,14,82,Material_Shortage,862,533,46700.07,1,0.0,84.04,Optimal
+R_Aurangabad,27-02-2024,A,208,199,1,Painting,Mahindra_Suppliers,Gearbox,11,115,Power_Failure,257,386,62434.04,5,0.5,95.67,Below Reorder
+R_Aurangabad,20-03-2024,A,190,178,3,Welding,Valeo,Electronics,7,100,Maintenance,279,345,66455.58,2,1.69,93.68,Below Reorder
+R_Pune,28-04-2024,A,211,209,2,Welding,Continental,Body_Parts,5,157,Maintenance,398,325,53945.46,3,0.96,99.05,Optimal
+R_Aurangabad,05-07-2024,B,189,153,6,Painting,Valeo,Electronics,4,80,Machine_Failure,565,380,57544.49,0,3.92,80.95,Optimal
+R_Pune,30-03-2024,C,225,193,14,Electrical,Continental,Electronics,6,102,Machine_Failure,916,312,77647.5,5,7.25,85.78,Optimal
+R_Pune,07-07-2024,A,207,190,4,Painting,ZF,Engine_Parts,11,49,Power_Failure,772,385,75984.17,2,2.11,91.79,Optimal
+R_Pune,14-07-2024,A,249,209,8,Assembly,Mahindra_Suppliers,Electronics,3,73,Power_Failure,755,429,58943.7,1,3.83,83.94,Optimal
+R_Pune,06-03-2024,C,255,224,7,Electrical,Bosch,Engine_Parts,13,143,Power_Failure,201,441,49128.18,1,3.12,87.84,Below Reorder
+R_Pune,22-06-2024,B,238,231,13,No Defect,Mahindra_Suppliers,Body_Parts,2,35,Power_Failure,849,573,51440.96,5,5.63,97.06,Optimal
+R_Pune,15-05-2024,A,233,212,14,Welding,Continental,Engine_Parts,11,23,Power_Failure,773,416,66164.15,0,6.6,90.99,Optimal
+R_Pune,05-01-2024,C,186,149,8,Electrical,Mahindra_Suppliers,Engine_Parts,7,57,Material_Shortage,614,344,45834.06,2,5.37,80.11,Optimal
+R_Chakan,19-04-2024,B,229,220,0,Assembly,Bosch,Gearbox,11,176,Machine_Failure,640,480,63426.29,3,0.0,96.07,Optimal
+R_Aurangabad,02-04-2024,A,200,200,6,Welding,Mahindra_Suppliers,Gearbox,8,130,Power_Failure,376,457,63465.79,3,3.0,100.0,Below Reorder
+R_Aurangabad,28-08-2024,C,246,209,0,Assembly,ZF,Gearbox,4,80,Machine_Failure,920,457,52374.03,2,0.0,84.96,Optimal
+R_Pune,16-09-2024,B,247,237,15,Painting,Mahindra_Suppliers,Body_Parts,8,157,Material_Shortage,433,580,51254.2,4,6.33,95.95,Below Reorder
+R_Aurangabad,16-07-2024,A,192,165,0,Electrical,ZF,Body_Parts,4,129,Maintenance,270,541,57215.37,4,0.0,85.94,Below Reorder
+R_Chakan,12-09-2024,A,260,250,10,Welding,Bosch,Electronics,11,75,Machine_Failure,548,394,64232.44,1,4.0,96.15,Optimal
+R_Aurangabad,04-10-2024,B,251,225,15,Welding,Bosch,Electronics,3,79,Material_Shortage,909,306,62001.88,5,6.67,89.64,Optimal
+R_Pune,12-08-2024,A,259,220,0,Electrical,Continental,Body_Parts,6,171,Machine_Failure,261,549,47335.23,0,0.0,84.94,Below Reorder
+R_Chakan,24-10-2024,B,200,198,9,No Defect,Mahindra_Suppliers,Engine_Parts,14,21,Material_Shortage,797,543,65142.66,1,4.55,99.0,Optimal
+R_Chakan,10-10-2024,C,235,228,14,Electrical,Valeo,Electronics,10,116,Material_Shortage,1096,379,75099.73,3,6.14,97.02,Optimal
+R_Aurangabad,19-09-2024,B,191,159,1,Electrical,Mahindra_Suppliers,Gearbox,9,129,Maintenance,909,512,53783.15,4,0.63,83.25,Optimal
+R_Pune,01-05-2024,B,187,171,13,Painting,ZF,Gearbox,11,128,Material_Shortage,1176,328,73270.79,0,7.6,91.44,Optimal
+R_Pune,07-06-2024,C,188,172,15,Welding,Valeo,Gearbox,2,109,Material_Shortage,749,391,79752.72,0,8.72,91.49,Optimal
+R_Pune,08-07-2024,A,248,222,0,Welding,Bosch,Body_Parts,5,73,Material_Shortage,871,354,61165.92,5,0.0,89.52,Optimal
+R_Chakan,25-02-2024,A,251,251,1,Painting,Bosch,Engine_Parts,12,151,Machine_Failure,446,470,78877.68,0,0.4,100.0,Below Reorder
+R_Aurangabad,10-01-2024,B,234,211,12,No Defect,Valeo,Gearbox,8,84,Maintenance,394,473,49838.97,5,5.69,90.17,Below Reorder
+R_Aurangabad,05-10-2024,A,201,169,1,No Defect,Bosch,Gearbox,9,39,Machine_Failure,235,479,46539.18,1,0.59,84.08,Below Reorder
+R_Chakan,28-03-2024,B,250,236,0,No Defect,Bosch,Electronics,9,165,Machine_Failure,367,322,75976.27,4,0.0,94.4,Optimal
+R_Chakan,19-05-2024,B,245,209,8,Assembly,ZF,Gearbox,11,51,Material_Shortage,803,443,72048.43,1,3.83,85.31,Optimal
+R_Chakan,25-05-2024,B,243,233,6,Painting,ZF,Electronics,10,130,Material_Shortage,908,538,67245.94,1,2.58,95.88,Optimal
+R_Chakan,31-01-2024,B,184,155,6,Painting,ZF,Engine_Parts,2,99,Power_Failure,473,334,59341.98,3,3.87,84.24,Optimal
+R_Chakan,13-02-2024,C,218,195,5,Welding,Mahindra_Suppliers,Engine_Parts,11,68,Material_Shortage,807,543,52264.59,0,2.56,89.45,Optimal
+R_Pune,01-02-2024,A,184,148,9,Assembly,Mahindra_Suppliers,Body_Parts,6,139,Power_Failure,577,318,55943.89,4,6.08,80.43,Optimal
+R_Aurangabad,11-07-2024,C,203,170,5,Painting,Valeo,Gearbox,11,58,Power_Failure,1047,386,76265.65,1,2.94,83.74,Optimal
+R_Aurangabad,12-09-2024,A,226,188,3,Assembly,Continental,Body_Parts,5,36,Material_Shortage,501,594,70377.99,1,1.6,83.19,Below Reorder
+R_Aurangabad,23-09-2024,B,259,238,5,Painting,Valeo,Body_Parts,8,68,Power_Failure,698,560,65588.28,2,2.1,91.89,Optimal
+R_Aurangabad,19-06-2024,A,241,205,13,No Defect,Bosch,Electronics,14,72,Material_Shortage,544,337,47600.92,5,6.34,85.06,Optimal
+R_Chakan,12-09-2024,B,249,241,5,No Defect,Bosch,Body_Parts,8,5,Maintenance,500,315,55142.5,4,2.07,96.79,Optimal
+R_Pune,03-05-2024,A,205,171,10,Painting,Valeo,Gearbox,15,120,Power_Failure,204,415,57882.0,5,5.85,83.41,Below Reorder
+R_Aurangabad,05-04-2024,A,192,163,6,Electrical,ZF,Engine_Parts,2,14,Material_Shortage,590,305,76835.49,3,3.68,84.9,Optimal
+R_Chakan,06-09-2024,A,255,216,8,Painting,Valeo,Body_Parts,14,21,Maintenance,1019,319,75638.59,0,3.7,84.71,Optimal
+R_Aurangabad,07-04-2024,C,214,187,9,Assembly,Valeo,Electronics,13,114,Material_Shortage,544,404,73450.17,1,4.81,87.38,Optimal
+R_Chakan,27-08-2024,C,213,205,9,Assembly,Valeo,Electronics,10,81,Machine_Failure,1069,498,65278.54,4,4.39,96.24,Optimal
+R_Aurangabad,18-01-2024,A,253,214,2,Assembly,Bosch,Body_Parts,7,129,Machine_Failure,360,578,79049.81,0,0.93,84.58,Below Reorder
+R_Chakan,12-09-2024,B,253,229,5,Electrical,ZF,Engine_Parts,2,65,Maintenance,597,580,49001.7,4,2.18,90.51,Optimal
+R_Pune,24-04-2024,A,238,202,6,Assembly,Mahindra_Suppliers,Electronics,9,118,Power_Failure,314,389,46360.9,2,2.97,84.87,Below Reorder
+R_Aurangabad,13-02-2024,B,189,184,13,Electrical,ZF,Engine_Parts,7,15,Power_Failure,1076,483,79447.9,1,7.07,97.35,Optimal
+R_Aurangabad,17-08-2024,B,215,211,6,Welding,Mahindra_Suppliers,Engine_Parts,10,154,Maintenance,759,365,64867.35,2,2.84,98.14,Optimal
+R_Chakan,15-06-2024,A,250,220,5,Electrical,ZF,Body_Parts,8,70,Power_Failure,1118,569,77985.01,4,2.27,88.0,Optimal
+R_Chakan,25-04-2024,A,223,203,8,Electrical,ZF,Electronics,11,118,Maintenance,450,579,71683.98,1,3.94,91.03,Below Reorder
+R_Chakan,16-06-2024,A,193,192,15,Welding,ZF,Electronics,10,79,Maintenance,651,595,70444.37,2,7.81,99.48,Optimal
+R_Chakan,15-01-2024,A,220,194,9,No Defect,Bosch,Engine_Parts,14,154,Machine_Failure,296,505,62124.04,4,4.64,88.18,Below Reorder
+R_Aurangabad,06-08-2024,B,193,184,8,Welding,ZF,Gearbox,8,134,Maintenance,465,582,70209.91,5,4.35,95.34,Below Reorder
+R_Pune,29-05-2024,A,246,221,0,Welding,Mahindra_Suppliers,Electronics,7,52,Maintenance,829,453,56825.4,1,0.0,89.84,Optimal
+R_Chakan,07-01-2024,C,188,177,4,Electrical,Valeo,Engine_Parts,8,160,Machine_Failure,706,572,77754.35,3,2.26,94.15,Optimal
+R_Chakan,03-06-2024,B,241,211,14,Assembly,Valeo,Gearbox,2,26,Maintenance,323,420,64301.66,4,6.64,87.55,Below Reorder
+R_Pune,16-04-2024,B,208,190,4,No Defect,Bosch,Engine_Parts,14,5,Machine_Failure,871,389,49886.65,2,2.11,91.35,Optimal
+R_Pune,15-01-2024,C,232,209,7,Assembly,Mahindra_Suppliers,Body_Parts,4,19,Power_Failure,351,461,67949.54,5,3.35,90.09,Below Reorder
+R_Aurangabad,27-05-2024,C,199,198,13,Electrical,Bosch,Body_Parts,13,60,Power_Failure,567,469,74330.81,4,6.57,99.5,Optimal
+R_Aurangabad,06-04-2024,C,242,237,6,Painting,Continental,Body_Parts,5,175,Machine_Failure,993,502,54256.74,2,2.53,97.93,Optimal
+R_Aurangabad,22-06-2024,B,187,150,8,Electrical,Valeo,Electronics,8,44,Power_Failure,1072,543,54828.44,1,5.33,80.21,Optimal
+R_Chakan,29-05-2024,B,211,176,13,Welding,Continental,Electronics,8,98,Material_Shortage,336,306,54749.35,3,7.39,83.41,Optimal
+R_Pune,28-08-2024,C,260,231,11,No Defect,Valeo,Electronics,11,42,Material_Shortage,532,487,66228.58,2,4.76,88.85,Optimal
+R_Pune,25-02-2024,A,217,194,15,Painting,Valeo,Electronics,4,135,Material_Shortage,1033,596,75227.51,5,7.73,89.4,Optimal
+R_Aurangabad,19-02-2024,C,229,190,0,Painting,Continental,Electronics,8,166,Material_Shortage,1149,305,55432.99,4,0.0,82.97,Optimal
+R_Aurangabad,12-01-2024,C,194,161,10,Assembly,ZF,Electronics,8,123,Maintenance,609,597,74329.0,5,6.21,82.99,Optimal
+R_Pune,09-05-2024,A,234,194,14,Electrical,Mahindra_Suppliers,Electronics,8,111,Material_Shortage,982,476,73201.85,1,7.22,82.91,Optimal
+R_Chakan,14-02-2024,C,209,191,9,Electrical,Valeo,Gearbox,9,150,Power_Failure,573,412,56590.52,4,4.71,91.39,Optimal
+R_Pune,16-06-2024,B,244,213,7,Painting,Valeo,Electronics,3,52,Machine_Failure,817,411,77109.9,3,3.29,87.3,Optimal
+R_Chakan,15-09-2024,C,257,231,10,Welding,Mahindra_Suppliers,Body_Parts,11,11,Power_Failure,1001,524,70817.06,0,4.33,89.88,Optimal
+R_Aurangabad,13-10-2024,C,242,215,1,Electrical,ZF,Electronics,4,144,Maintenance,871,469,61958.14,5,0.47,88.84,Optimal
+R_Aurangabad,07-08-2024,C,216,191,13,Assembly,Continental,Gearbox,14,149,Machine_Failure,1105,392,53080.36,1,6.81,88.43,Optimal
+R_Chakan,22-10-2024,A,213,183,8,Assembly,Continental,Body_Parts,9,80,Power_Failure,667,323,46883.45,0,4.37,85.92,Optimal
+R_Pune,17-05-2024,C,234,208,7,Assembly,Continental,Engine_Parts,15,65,Maintenance,1057,461,73077.44,3,3.37,88.89,Optimal
+R_Chakan,09-07-2024,C,255,244,0,No Defect,Mahindra_Suppliers,Engine_Parts,2,102,Maintenance,240,392,77261.77,3,0.0,95.69,Below Reorder
+R_Pune,07-02-2024,C,205,183,0,No Defect,Valeo,Electronics,11,78,Maintenance,304,541,71434.77,2,0.0,89.27,Below Reorder
+R_Pune,08-10-2024,B,205,178,13,Assembly,Bosch,Engine_Parts,14,131,Machine_Failure,500,388,60331.44,3,7.3,86.83,Optimal
+R_Aurangabad,24-03-2024,C,198,167,11,Welding,Continental,Body_Parts,12,170,Material_Shortage,543,398,67105.74,1,6.59,84.34,Optimal
+R_Pune,12-10-2024,C,219,182,8,Painting,Bosch,Engine_Parts,13,89,Machine_Failure,312,420,55470.49,1,4.4,83.11,Below Reorder
+R_Chakan,12-02-2024,B,243,220,2,Welding,ZF,Body_Parts,11,174,Machine_Failure,888,523,54959.98,4,0.91,90.53,Optimal
+R_Aurangabad,01-02-2024,C,231,204,5,Assembly,Valeo,Body_Parts,11,140,Maintenance,944,499,59956.02,5,2.45,88.31,Optimal
+R_Chakan,30-03-2024,B,241,238,13,Assembly,Continental,Gearbox,3,21,Machine_Failure,678,481,70532.14,1,5.46,98.76,Optimal
+R_Aurangabad,24-04-2024,A,247,212,8,No Defect,Continental,Gearbox,13,110,Machine_Failure,1198,572,76908.35,4,3.77,85.83,Optimal
+R_Aurangabad,01-09-2024,B,241,209,2,Electrical,Bosch,Gearbox,13,105,Machine_Failure,275,583,57917.09,0,0.96,86.72,Below Reorder
+R_Chakan,21-03-2024,B,227,209,11,Electrical,Bosch,Body_Parts,15,83,Maintenance,795,421,55207.6,3,5.26,92.07,Optimal
+R_Pune,23-05-2024,C,260,251,10,Electrical,Continental,Engine_Parts,8,8,Material_Shortage,904,321,56319.06,4,3.98,96.54,Optimal
+R_Aurangabad,29-09-2024,C,256,236,1,Painting,Continental,Gearbox,4,133,Machine_Failure,325,325,57319.96,4,0.42,92.19,Optimal
+R_Aurangabad,01-08-2024,C,217,192,4,Assembly,Continental,Electronics,14,46,Machine_Failure,1107,335,45446.71,0,2.08,88.48,Optimal
+R_Pune,19-01-2024,A,250,215,10,Electrical,Continental,Body_Parts,15,166,Material_Shortage,419,518,57891.83,3,4.65,86.0,Below Reorder
+R_Aurangabad,26-03-2024,B,216,202,1,No Defect,Bosch,Electronics,5,65,Power_Failure,209,358,76817.54,4,0.5,93.52,Below Reorder
+R_Chakan,03-06-2024,C,260,226,11,Assembly,Continental,Gearbox,7,1,Maintenance,291,474,63745.44,1,4.87,86.92,Below Reorder
+R_Chakan,06-07-2024,A,255,235,6,No Defect,Valeo,Engine_Parts,6,167,Machine_Failure,1191,332,75991.29,5,2.55,92.16,Optimal
+R_Chakan,16-02-2024,B,251,249,9,Welding,Continental,Gearbox,2,21,Material_Shortage,380,532,66338.99,2,3.61,99.2,Below Reorder
+R_Pune,30-09-2024,C,201,175,4,Welding,Continental,Electronics,3,127,Material_Shortage,685,396,78381.42,4,2.29,87.06,Optimal
+R_Chakan,07-02-2024,B,185,160,7,Welding,Continental,Electronics,5,35,Machine_Failure,404,359,70550.95,0,4.38,86.49,Optimal
+R_Chakan,29-03-2024,A,215,197,1,No Defect,Valeo,Gearbox,4,55,Machine_Failure,723,440,64940.92,1,0.51,91.63,Optimal
+R_Aurangabad,22-08-2024,B,190,185,15,Electrical,Bosch,Body_Parts,9,4,Power_Failure,814,401,79389.77,5,8.11,97.37,Optimal
+R_Chakan,07-09-2024,A,243,243,13,Painting,Continental,Gearbox,8,34,Material_Shortage,943,343,58051.28,1,5.35,100.0,Optimal
+R_Chakan,15-10-2024,B,215,215,13,Electrical,Bosch,Body_Parts,7,81,Material_Shortage,823,444,51802.75,0,6.05,100.0,Optimal
+R_Aurangabad,30-06-2024,A,188,175,4,Welding,Continental,Engine_Parts,11,122,Machine_Failure,269,432,61536.75,5,2.29,93.09,Below Reorder
+R_Chakan,09-04-2024,A,234,219,0,Painting,ZF,Gearbox,8,100,Material_Shortage,394,585,48164.02,5,0.0,93.59,Below Reorder
+R_Aurangabad,10-08-2024,B,221,204,7,No Defect,ZF,Gearbox,14,89,Material_Shortage,805,316,78567.82,5,3.43,92.31,Optimal
+R_Pune,24-05-2024,C,181,170,4,Painting,Mahindra_Suppliers,Engine_Parts,15,122,Material_Shortage,1193,591,62388.66,5,2.35,93.92,Optimal
+R_Pune,27-08-2024,A,225,209,8,Welding,Mahindra_Suppliers,Gearbox,9,93,Machine_Failure,391,300,72932.56,3,3.83,92.89,Optimal
+R_Pune,09-01-2024,C,185,152,3,Painting,Mahindra_Suppliers,Gearbox,15,36,Material_Shortage,1122,362,71053.46,5,1.97,82.16,Optimal
+R_Chakan,21-05-2024,B,180,169,1,Electrical,ZF,Gearbox,6,52,Material_Shortage,274,483,56802.67,1,0.59,93.89,Below Reorder
+R_Pune,24-03-2024,C,246,217,15,Painting,Continental,Electronics,10,78,Material_Shortage,866,456,68622.6,4,6.91,88.21,Optimal
+R_Pune,14-02-2024,A,245,235,4,Assembly,Bosch,Gearbox,9,27,Power_Failure,1151,399,64713.77,4,1.7,95.92,Optimal
+R_Aurangabad,11-02-2024,B,212,205,13,Assembly,Valeo,Electronics,11,75,Maintenance,442,530,72968.29,0,6.34,96.7,Below Reorder
+R_Chakan,15-05-2024,B,254,241,6,Assembly,Valeo,Gearbox,4,8,Material_Shortage,1180,577,49091.04,2,2.49,94.88,Optimal
+R_Aurangabad,27-05-2024,B,236,216,3,Welding,Continental,Body_Parts,4,84,Maintenance,1001,495,51855.47,0,1.39,91.53,Optimal
+R_Pune,09-07-2024,C,227,206,15,Welding,Continental,Body_Parts,5,91,Material_Shortage,1171,313,67292.77,5,7.28,90.75,Optimal
+R_Chakan,29-04-2024,C,214,180,2,Painting,Valeo,Gearbox,10,79,Maintenance,550,507,74977.44,4,1.11,84.11,Optimal
+R_Chakan,09-03-2024,C,254,250,10,Welding,Mahindra_Suppliers,Electronics,14,37,Machine_Failure,678,541,73971.62,0,4.0,98.43,Optimal
+R_Chakan,12-04-2024,A,235,204,4,Painting,Mahindra_Suppliers,Engine_Parts,15,8,Maintenance,499,483,63065.1,4,1.96,86.81,Optimal
+R_Chakan,24-06-2024,B,186,183,7,No Defect,Bosch,Body_Parts,13,79,Maintenance,613,439,76945.62,4,3.83,98.39,Optimal
+R_Chakan,26-01-2024,C,207,206,7,Painting,Continental,Body_Parts,2,3,Power_Failure,1013,536,47181.46,5,3.4,99.52,Optimal
+R_Pune,18-01-2024,A,237,206,10,Assembly,Mahindra_Suppliers,Engine_Parts,8,118,Machine_Failure,356,469,76013.97,3,4.85,86.92,Below Reorder
+R_Pune,01-05-2024,A,181,145,12,Electrical,Continental,Electronics,4,105,Power_Failure,525,476,77390.47,5,8.28,80.11,Optimal
+R_Chakan,15-10-2024,C,236,198,10,No Defect,Continental,Engine_Parts,4,174,Material_Shortage,216,490,75268.69,2,5.05,83.9,Below Reorder
+R_Chakan,18-09-2024,B,242,210,0,Electrical,Continental,Electronics,3,113,Power_Failure,471,399,79739.76,2,0.0,86.78,Optimal
+R_Aurangabad,17-04-2024,C,249,237,15,Welding,Valeo,Engine_Parts,5,39,Material_Shortage,266,408,54700.85,1,6.33,95.18,Below Reorder
+R_Aurangabad,25-05-2024,C,206,178,8,Assembly,Mahindra_Suppliers,Body_Parts,5,14,Power_Failure,893,470,77005.16,4,4.49,86.41,Optimal
+R_Pune,20-05-2024,B,187,185,7,No Defect,Valeo,Body_Parts,5,171,Maintenance,375,317,48510.36,4,3.78,98.93,Optimal
+R_Aurangabad,09-08-2024,B,232,216,6,Welding,ZF,Electronics,8,115,Power_Failure,603,448,74708.48,1,2.78,93.1,Optimal
+R_Pune,21-10-2024,B,210,175,1,Painting,Bosch,Electronics,13,178,Maintenance,817,465,55684.46,4,0.57,83.33,Optimal
+R_Pune,25-08-2024,B,216,188,6,Electrical,Valeo,Electronics,7,3,Machine_Failure,424,487,48868.34,4,3.19,87.04,Below Reorder
+R_Chakan,07-01-2024,C,239,215,10,Welding,Continental,Electronics,2,41,Power_Failure,987,478,48329.4,2,4.65,89.96,Optimal
+R_Aurangabad,16-09-2024,C,187,180,11,Assembly,ZF,Gearbox,11,133,Maintenance,694,479,65458.73,4,6.11,96.26,Optimal
+R_Pune,06-05-2024,A,219,182,3,Painting,Continental,Body_Parts,11,108,Machine_Failure,431,425,53231.86,3,1.65,83.11,Optimal
+R_Pune,10-08-2024,A,208,181,0,Painting,ZF,Engine_Parts,8,26,Power_Failure,987,521,46280.84,3,0.0,87.02,Optimal
+R_Aurangabad,15-03-2024,C,227,225,1,Welding,Valeo,Engine_Parts,9,80,Material_Shortage,382,351,78075.22,2,0.44,99.12,Optimal
+R_Pune,11-09-2024,B,249,249,14,No Defect,Continental,Gearbox,11,21,Machine_Failure,482,323,71955.06,1,5.62,100.0,Optimal
+R_Aurangabad,14-10-2024,A,200,187,6,Electrical,Continental,Electronics,15,42,Machine_Failure,338,370,78457.11,5,3.21,93.5,Below Reorder
+R_Pune,27-08-2024,A,244,222,10,No Defect,Mahindra_Suppliers,Body_Parts,10,138,Maintenance,506,525,51728.34,5,4.5,90.98,Below Reorder
+R_Pune,16-02-2024,A,206,199,6,Painting,ZF,Body_Parts,10,164,Maintenance,725,489,62693.63,4,3.02,96.6,Optimal
+R_Aurangabad,04-09-2024,C,250,218,14,Electrical,Continental,Body_Parts,13,79,Material_Shortage,301,534,79869.48,5,6.42,87.2,Below Reorder
+R_Aurangabad,16-10-2024,A,222,219,4,Assembly,Bosch,Engine_Parts,12,159,Power_Failure,819,528,69904.11,0,1.83,98.65,Optimal
+R_Aurangabad,01-03-2024,B,183,173,4,Painting,Mahindra_Suppliers,Gearbox,8,29,Material_Shortage,543,586,75352.1,5,2.31,94.54,Below Reorder
+R_Chakan,20-02-2024,C,253,217,8,No Defect,ZF,Gearbox,2,40,Maintenance,1093,581,75847.84,1,3.69,85.77,Optimal
+R_Aurangabad,23-07-2024,B,220,208,14,Electrical,ZF,Gearbox,11,75,Machine_Failure,609,386,71139.26,1,6.73,94.55,Optimal
+R_Chakan,07-09-2024,B,251,237,4,Welding,Valeo,Electronics,2,158,Material_Shortage,921,501,45626.54,1,1.69,94.42,Optimal
+R_Chakan,17-07-2024,B,215,202,11,No Defect,Continental,Engine_Parts,15,143,Machine_Failure,872,549,56055.4,5,5.45,93.95,Optimal
+R_Chakan,14-08-2024,A,207,206,1,Welding,Continental,Engine_Parts,7,34,Material_Shortage,985,300,54854.76,4,0.49,99.52,Optimal
+R_Pune,19-08-2024,C,195,193,14,No Defect,ZF,Body_Parts,14,5,Power_Failure,1034,419,56683.63,1,7.25,98.97,Optimal
+R_Chakan,24-03-2024,C,190,190,15,Assembly,Mahindra_Suppliers,Gearbox,7,96,Machine_Failure,907,574,77315.15,3,7.89,100.0,Optimal
+R_Aurangabad,28-06-2024,A,255,248,0,Painting,Bosch,Engine_Parts,9,121,Power_Failure,325,532,52047.01,5,0.0,97.25,Below Reorder
+R_Aurangabad,27-04-2024,B,211,201,2,Painting,Mahindra_Suppliers,Electronics,14,102,Power_Failure,397,384,54460.06,0,1.0,95.26,Optimal
+R_Chakan,06-09-2024,A,227,208,12,Electrical,Mahindra_Suppliers,Engine_Parts,15,65,Machine_Failure,931,334,71813.81,4,5.77,91.63,Optimal
+R_Chakan,27-06-2024,C,185,151,15,Painting,ZF,Gearbox,5,157,Material_Shortage,1054,564,69698.98,0,9.93,81.62,Optimal
+R_Chakan,11-04-2024,C,238,199,14,Assembly,Mahindra_Suppliers,Gearbox,2,106,Material_Shortage,841,530,55766.08,2,7.04,83.61,Optimal
+R_Chakan,29-01-2024,A,205,201,14,No Defect,Valeo,Gearbox,2,111,Maintenance,334,442,53093.89,4,6.97,98.05,Below Reorder
+R_Pune,21-02-2024,B,242,212,5,No Defect,Valeo,Gearbox,3,27,Machine_Failure,331,440,58488.86,5,2.36,87.6,Below Reorder
+R_Chakan,06-02-2024,C,253,249,10,Electrical,ZF,Engine_Parts,9,119,Machine_Failure,593,534,62986.72,3,4.02,98.42,Optimal
+R_Pune,09-10-2024,C,245,217,1,No Defect,Mahindra_Suppliers,Engine_Parts,7,152,Maintenance,1076,403,73763.51,4,0.46,88.57,Optimal
+R_Chakan,17-09-2024,B,190,189,3,Assembly,Continental,Gearbox,14,10,Maintenance,415,561,47138.93,5,1.59,99.47,Below Reorder
+R_Pune,03-07-2024,A,205,200,15,No Defect,Valeo,Engine_Parts,2,177,Power_Failure,568,520,66779.75,0,7.5,97.56,Optimal
+R_Chakan,01-10-2024,A,253,227,11,Painting,ZF,Electronics,9,83,Machine_Failure,897,395,79288.66,3,4.85,89.72,Optimal
+R_Pune,07-10-2024,C,194,171,7,Electrical,Bosch,Electronics,14,24,Maintenance,804,361,70265.69,1,4.09,88.14,Optimal
+R_Pune,30-09-2024,A,183,144,15,Electrical,Continental,Engine_Parts,3,59,Material_Shortage,1065,376,55288.68,0,10.42,78.69,Optimal
+R_Chakan,04-06-2024,C,207,172,13,Assembly,Continental,Electronics,14,42,Machine_Failure,509,463,67830.72,5,7.56,83.09,Optimal
+R_Pune,27-10-2024,B,189,173,5,Assembly,Mahindra_Suppliers,Gearbox,8,161,Machine_Failure,817,479,57744.78,3,2.89,91.53,Optimal
+R_Chakan,06-03-2024,C,199,176,5,Electrical,Mahindra_Suppliers,Electronics,7,74,Power_Failure,451,443,72998.42,4,2.84,88.44,Optimal
+R_Aurangabad,18-05-2024,B,247,231,4,No Defect,Continental,Electronics,13,57,Material_Shortage,842,517,60025.42,2,1.73,93.52,Optimal
+R_Pune,25-09-2024,A,232,209,0,No Defect,Mahindra_Suppliers,Gearbox,3,80,Machine_Failure,851,404,63379.04,1,0.0,90.09,Optimal
+R_Chakan,27-05-2024,B,253,229,1,Painting,Continental,Body_Parts,4,128,Machine_Failure,744,411,76623.26,0,0.44,90.51,Optimal
+R_Pune,20-07-2024,A,180,160,13,Welding,ZF,Gearbox,9,158,Power_Failure,265,564,69512.46,1,8.12,88.89,Below Reorder
+R_Pune,01-07-2024,C,236,210,8,Welding,Mahindra_Suppliers,Electronics,2,9,Material_Shortage,943,565,78080.93,5,3.81,88.98,Optimal
+R_Aurangabad,10-03-2024,B,235,211,13,Assembly,Bosch,Gearbox,3,95,Material_Shortage,516,351,56259.0,0,6.16,89.79,Optimal
+R_Aurangabad,01-08-2024,A,211,174,13,Assembly,Bosch,Gearbox,2,137,Maintenance,891,588,56579.62,0,7.47,82.46,Optimal
+R_Chakan,11-07-2024,C,211,178,2,Electrical,Valeo,Gearbox,10,62,Machine_Failure,554,469,54829.68,4,1.12,84.36,Optimal
+R_Aurangabad,02-08-2024,B,190,179,4,Painting,ZF,Body_Parts,10,97,Power_Failure,969,370,73922.24,0,2.23,94.21,Optimal
+R_Pune,17-09-2024,A,253,248,1,Assembly,Continental,Body_Parts,4,114,Maintenance,521,495,55072.98,3,0.4,98.02,Optimal
+R_Chakan,19-06-2024,C,231,220,5,Welding,Bosch,Engine_Parts,5,100,Machine_Failure,550,479,49533.38,2,2.27,95.24,Optimal
+R_Pune,09-06-2024,B,209,173,15,No Defect,Mahindra_Suppliers,Engine_Parts,6,7,Maintenance,1017,406,60812.78,2,8.67,82.78,Optimal
+R_Aurangabad,26-08-2024,C,180,165,15,Painting,Continental,Engine_Parts,14,13,Maintenance,970,384,63388.76,2,9.09,91.67,Optimal
+R_Chakan,30-04-2024,B,205,167,2,Welding,Mahindra_Suppliers,Body_Parts,13,3,Maintenance,685,580,73510.19,5,1.2,81.46,Optimal
+R_Aurangabad,05-05-2024,A,202,166,5,Assembly,Continental,Electronics,7,165,Maintenance,329,434,73356.75,1,3.01,82.18,Below Reorder
+R_Chakan,21-03-2024,B,193,188,8,No Defect,Bosch,Gearbox,15,124,Power_Failure,370,597,57117.38,4,4.26,97.41,Below Reorder
+R_Chakan,17-04-2024,B,255,228,2,Assembly,ZF,Electronics,12,103,Machine_Failure,636,339,74245.79,3,0.88,89.41,Optimal
+R_Pune,04-01-2024,C,231,197,7,Welding,Bosch,Body_Parts,9,62,Material_Shortage,669,301,62374.58,0,3.55,85.28,Optimal
+R_Aurangabad,11-06-2024,C,224,201,7,No Defect,Valeo,Electronics,5,16,Power_Failure,1071,600,57619.76,0,3.48,89.73,Optimal
+R_Pune,17-02-2024,C,205,166,11,Electrical,Valeo,Body_Parts,2,124,Machine_Failure,968,585,48492.79,0,6.63,80.98,Optimal
+R_Pune,30-06-2024,B,242,219,13,Welding,Continental,Body_Parts,15,95,Material_Shortage,528,569,53314.59,0,5.94,90.5,Below Reorder
+R_Pune,10-09-2024,B,189,171,5,No Defect,ZF,Electronics,11,124,Material_Shortage,440,591,51531.81,1,2.92,90.48,Below Reorder
+R_Chakan,13-09-2024,C,190,174,1,No Defect,Bosch,Electronics,15,19,Material_Shortage,609,519,71597.4,5,0.57,91.58,Optimal
+R_Chakan,22-02-2024,A,242,202,1,Assembly,Valeo,Body_Parts,14,19,Machine_Failure,975,303,63170.6,0,0.5,83.47,Optimal
+R_Pune,18-04-2024,A,221,204,2,Painting,Valeo,Electronics,10,137,Maintenance,1023,530,69386.42,3,0.98,92.31,Optimal
+R_Pune,03-10-2024,C,206,178,10,Welding,ZF,Gearbox,4,88,Material_Shortage,1137,401,79646.6,5,5.62,86.41,Optimal
+R_Pune,19-10-2024,A,231,214,15,Welding,Valeo,Gearbox,8,51,Machine_Failure,324,364,63548.99,0,7.01,92.64,Below Reorder
+R_Aurangabad,22-08-2024,C,234,228,7,Welding,Bosch,Gearbox,9,111,Maintenance,450,570,46540.32,3,3.07,97.44,Below Reorder
+R_Pune,27-08-2024,C,201,168,5,Electrical,Valeo,Body_Parts,2,43,Material_Shortage,408,504,49756.08,1,2.98,83.58,Below Reorder
+R_Chakan,25-04-2024,A,222,183,6,Assembly,Mahindra_Suppliers,Engine_Parts,13,8,Power_Failure,769,493,71414.63,3,3.28,82.43,Optimal
+R_Pune,10-01-2024,C,241,203,14,No Defect,Valeo,Engine_Parts,9,121,Material_Shortage,741,389,72421.07,2,6.9,84.23,Optimal
+R_Pune,14-08-2024,A,198,174,7,Electrical,Continental,Body_Parts,10,163,Power_Failure,717,528,45105.13,0,4.02,87.88,Optimal
+R_Aurangabad,16-04-2024,C,185,165,12,No Defect,Valeo,Engine_Parts,2,6,Machine_Failure,1147,316,58466.1,3,7.27,89.19,Optimal
+R_Aurangabad,17-06-2024,A,252,230,8,Welding,Bosch,Gearbox,10,9,Maintenance,205,521,61167.33,1,3.48,91.27,Below Reorder
+R_Pune,11-08-2024,B,257,248,3,Welding,Mahindra_Suppliers,Body_Parts,13,15,Power_Failure,953,471,49081.89,4,1.21,96.5,Optimal
+R_Chakan,13-09-2024,B,238,228,4,Painting,Mahindra_Suppliers,Body_Parts,5,70,Material_Shortage,636,358,58572.27,4,1.75,95.8,Optimal
+R_Aurangabad,10-03-2024,C,247,213,5,Welding,ZF,Engine_Parts,3,29,Power_Failure,1000,591,64222.25,2,2.35,86.23,Optimal
+R_Pune,27-01-2024,A,194,186,7,Electrical,Bosch,Electronics,13,22,Power_Failure,463,366,72298.93,1,3.76,95.88,Optimal
+R_Chakan,01-02-2024,B,193,155,11,Assembly,Valeo,Electronics,12,130,Maintenance,990,366,66846.47,0,7.1,80.31,Optimal
+R_Aurangabad,05-04-2024,B,236,201,10,Assembly,Continental,Engine_Parts,8,137,Power_Failure,1028,519,57153.05,0,4.98,85.17,Optimal
+R_Pune,25-10-2024,A,190,177,5,Electrical,Bosch,Body_Parts,12,118,Material_Shortage,423,533,70588.58,3,2.82,93.16,Below Reorder
+R_Pune,25-05-2024,A,258,243,15,Electrical,Valeo,Electronics,8,61,Material_Shortage,385,509,49656.08,0,6.17,94.19,Below Reorder
+R_Chakan,09-08-2024,C,222,200,10,Electrical,Mahindra_Suppliers,Engine_Parts,11,170,Power_Failure,630,585,72116.71,5,5.0,90.09,Optimal
+R_Aurangabad,15-02-2024,A,245,223,11,Electrical,Valeo,Body_Parts,2,169,Power_Failure,239,374,74013.45,2,4.93,91.02,Below Reorder
+R_Pune,13-05-2024,A,217,195,0,Assembly,Continental,Electronics,3,25,Machine_Failure,726,545,78142.03,3,0.0,89.86,Optimal
+R_Aurangabad,28-03-2024,C,231,198,0,Electrical,Continental,Engine_Parts,11,16,Power_Failure,501,444,70434.14,3,0.0,85.71,Optimal
+R_Chakan,07-03-2024,B,211,200,14,Assembly,ZF,Engine_Parts,9,27,Machine_Failure,749,404,77116.45,3,7.0,94.79,Optimal
+R_Chakan,10-08-2024,C,240,207,15,Assembly,Valeo,Body_Parts,6,79,Maintenance,661,353,56042.68,1,7.25,86.25,Optimal
+R_Pune,20-10-2024,B,243,228,14,Assembly,Bosch,Electronics,7,68,Power_Failure,1156,341,58678.11,5,6.14,93.83,Optimal
+R_Aurangabad,07-08-2024,C,245,210,14,Painting,Valeo,Engine_Parts,5,159,Machine_Failure,592,437,63858.63,4,6.67,85.71,Optimal
+R_Pune,13-04-2024,A,221,214,1,Welding,Bosch,Gearbox,4,147,Maintenance,300,330,63693.56,0,0.47,96.83,Below Reorder
+R_Pune,14-03-2024,A,185,161,5,Welding,Continental,Engine_Parts,4,159,Maintenance,1150,523,71887.69,3,3.11,87.03,Optimal
+R_Pune,06-05-2024,A,184,147,4,Painting,Valeo,Electronics,6,102,Material_Shortage,409,386,49342.6,0,2.72,79.89,Optimal
+R_Pune,03-09-2024,C,193,174,2,Welding,Continental,Engine_Parts,11,37,Maintenance,1090,476,69603.96,2,1.15,90.16,Optimal
+R_Chakan,13-02-2024,A,195,171,12,Painting,Bosch,Electronics,2,125,Material_Shortage,775,556,77581.99,4,7.02,87.69,Optimal
+R_Pune,06-08-2024,A,246,222,4,No Defect,Bosch,Gearbox,3,25,Machine_Failure,1182,396,75336.41,4,1.8,90.24,Optimal
+R_Aurangabad,08-03-2024,A,182,176,12,Electrical,Continental,Gearbox,5,164,Machine_Failure,263,542,49648.34,5,6.82,96.7,Below Reorder
+R_Pune,14-09-2024,A,216,184,6,No Defect,Mahindra_Suppliers,Gearbox,5,174,Power_Failure,337,576,46974.29,0,3.26,85.19,Below Reorder
+R_Aurangabad,30-06-2024,A,203,198,5,No Defect,Continental,Gearbox,2,51,Maintenance,236,507,57312.05,4,2.53,97.54,Below Reorder
+R_Aurangabad,05-05-2024,B,225,198,9,Assembly,Continental,Engine_Parts,14,31,Power_Failure,609,415,58453.91,3,4.55,88.0,Optimal
+R_Pune,27-07-2024,B,220,185,6,Painting,Bosch,Electronics,13,51,Power_Failure,215,303,64624.48,1,3.24,84.09,Below Reorder
+R_Pune,18-06-2024,A,195,189,10,Welding,Mahindra_Suppliers,Gearbox,11,98,Power_Failure,712,448,75863.59,4,5.29,96.92,Optimal
+R_Aurangabad,06-07-2024,B,248,226,8,Painting,Bosch,Gearbox,11,149,Maintenance,767,380,70452.73,0,3.54,91.13,Optimal
+R_Aurangabad,02-10-2024,B,225,194,13,Painting,ZF,Electronics,5,73,Machine_Failure,203,592,76228.55,2,6.7,86.22,Below Reorder
+R_Aurangabad,22-03-2024,A,249,239,10,No Defect,ZF,Electronics,11,78,Material_Shortage,1111,413,66523.87,4,4.18,95.98,Optimal
+R_Chakan,18-07-2024,C,213,209,14,Electrical,ZF,Gearbox,12,107,Material_Shortage,624,546,61183.99,5,6.7,98.12,Optimal
+R_Chakan,06-09-2024,B,183,160,1,Painting,Bosch,Engine_Parts,14,120,Maintenance,254,594,53244.66,1,0.62,87.43,Below Reorder
+R_Pune,29-01-2024,A,203,194,13,Assembly,Valeo,Engine_Parts,9,99,Power_Failure,387,390,68705.92,5,6.7,95.57,Below Reorder
+R_Chakan,04-02-2024,C,184,148,10,Assembly,Mahindra_Suppliers,Body_Parts,4,65,Power_Failure,596,566,75536.12,2,6.76,80.43,Optimal
+R_Chakan,13-04-2024,A,237,214,9,Welding,Bosch,Electronics,10,162,Machine_Failure,480,392,64653.54,5,4.21,90.3,Optimal
+R_Pune,20-09-2024,C,226,200,11,Assembly,Mahindra_Suppliers,Gearbox,2,61,Material_Shortage,312,465,46438.89,3,5.5,88.5,Below Reorder
+R_Pune,25-01-2024,B,200,200,10,Assembly,Mahindra_Suppliers,Electronics,6,102,Machine_Failure,892,519,69104.17,0,5.0,100.0,Optimal
+R_Chakan,16-01-2024,C,218,184,9,Welding,Bosch,Electronics,2,174,Material_Shortage,1079,412,77538.42,4,4.89,84.4,Optimal
+R_Pune,22-07-2024,C,210,184,6,Painting,Mahindra_Suppliers,Body_Parts,13,99,Maintenance,1170,469,76129.08,4,3.26,87.62,Optimal
+R_Pune,03-02-2024,A,249,227,10,Assembly,ZF,Gearbox,12,27,Material_Shortage,1118,558,76115.89,1,4.41,91.16,Optimal
+R_Pune,21-03-2024,A,189,160,3,Painting,Valeo,Body_Parts,13,68,Machine_Failure,218,435,73142.39,0,1.88,84.66,Below Reorder
+R_Chakan,30-05-2024,B,212,199,8,Electrical,Continental,Electronics,6,142,Maintenance,508,555,53349.58,5,4.02,93.87,Below Reorder
+R_Chakan,09-09-2024,A,255,251,10,Welding,Bosch,Engine_Parts,10,80,Machine_Failure,304,370,52270.12,1,3.98,98.43,Below Reorder
+R_Chakan,25-07-2024,A,260,235,2,No Defect,Continental,Engine_Parts,2,118,Maintenance,1096,361,53428.07,4,0.85,90.38,Optimal
+R_Chakan,12-07-2024,B,245,241,11,Painting,ZF,Engine_Parts,10,19,Power_Failure,818,517,69191.18,4,4.56,98.37,Optimal
+R_Chakan,27-06-2024,A,201,198,1,No Defect,ZF,Engine_Parts,10,28,Machine_Failure,262,574,60703.43,3,0.51,98.51,Below Reorder
+R_Aurangabad,07-03-2024,B,195,193,7,Welding,Continental,Body_Parts,5,20,Maintenance,1051,562,64280.29,1,3.63,98.97,Optimal
+R_Aurangabad,16-07-2024,C,237,205,3,Electrical,Valeo,Engine_Parts,8,91,Material_Shortage,886,418,68855.01,3,1.46,86.5,Optimal
+R_Aurangabad,15-06-2024,C,187,186,0,Assembly,Bosch,Engine_Parts,11,32,Machine_Failure,970,508,77140.1,2,0.0,99.47,Optimal
+R_Aurangabad,15-04-2024,A,259,257,4,Painting,Continental,Engine_Parts,15,74,Material_Shortage,760,595,74760.69,1,1.56,99.23,Optimal
+R_Chakan,08-07-2024,C,254,233,13,Painting,Continental,Body_Parts,14,50,Power_Failure,1185,557,60357.09,1,5.58,91.73,Optimal
+R_Chakan,22-01-2024,B,234,223,8,Assembly,Continental,Gearbox,3,6,Machine_Failure,968,417,78143.01,0,3.59,95.3,Optimal
+R_Aurangabad,31-07-2024,A,217,216,2,Welding,Continental,Electronics,7,48,Maintenance,1061,584,73099.1,1,0.93,99.54,Optimal
+R_Aurangabad,18-01-2024,C,185,174,13,Electrical,ZF,Electronics,7,45,Machine_Failure,244,363,55784.27,4,7.47,94.05,Below Reorder
+R_Aurangabad,23-08-2024,C,248,244,3,Electrical,Valeo,Gearbox,2,105,Maintenance,1200,496,77480.23,5,1.23,98.39,Optimal
+R_Pune,04-05-2024,A,188,167,13,No Defect,Mahindra_Suppliers,Body_Parts,9,63,Machine_Failure,1198,348,58757.7,2,7.78,88.83,Optimal
+R_Aurangabad,07-08-2024,A,232,204,13,Welding,Valeo,Body_Parts,9,104,Power_Failure,683,506,78739.81,2,6.37,87.93,Optimal
+R_Aurangabad,12-10-2024,B,188,166,9,Assembly,Valeo,Gearbox,11,63,Material_Shortage,934,550,68471.47,3,5.42,88.3,Optimal
+R_Pune,06-03-2024,B,204,179,10,Electrical,Valeo,Body_Parts,13,71,Power_Failure,1189,414,69987.27,4,5.59,87.75,Optimal
+R_Pune,20-02-2024,A,212,177,7,Electrical,Mahindra_Suppliers,Gearbox,9,168,Maintenance,562,329,59579.71,1,3.95,83.49,Optimal
+R_Aurangabad,07-06-2024,C,189,186,6,Assembly,Mahindra_Suppliers,Body_Parts,10,31,Maintenance,424,348,78027.71,4,3.23,98.41,Optimal
+R_Pune,23-09-2024,C,218,188,12,Painting,Continental,Gearbox,11,167,Power_Failure,717,369,49340.91,2,6.38,86.24,Optimal
+R_Chakan,14-06-2024,B,218,192,9,Assembly,Bosch,Gearbox,10,97,Maintenance,1087,577,55459.89,4,4.69,88.07,Optimal
+R_Pune,20-03-2024,A,259,244,10,Electrical,Mahindra_Suppliers,Gearbox,5,168,Maintenance,904,406,52260.57,2,4.1,94.21,Optimal
+R_Aurangabad,06-01-2024,A,247,215,5,No Defect,Valeo,Electronics,9,12,Machine_Failure,506,581,75726.33,3,2.33,87.04,Below Reorder
+R_Pune,17-08-2024,C,237,210,13,Electrical,Valeo,Electronics,12,47,Maintenance,597,455,48317.34,4,6.19,88.61,Optimal
+R_Pune,05-09-2024,A,227,219,6,Assembly,Valeo,Body_Parts,10,27,Power_Failure,497,361,75049.41,5,2.74,96.48,Optimal
+R_Pune,04-08-2024,A,239,217,12,Painting,Valeo,Gearbox,13,0,Power_Failure,864,353,78360.25,3,5.53,90.79,Optimal
+R_Aurangabad,12-07-2024,C,220,198,0,Painting,Continental,Body_Parts,13,49,Machine_Failure,776,565,51279.15,5,0.0,90.0,Optimal
+R_Aurangabad,06-03-2024,B,196,173,2,Assembly,ZF,Engine_Parts,4,77,Maintenance,228,432,48869.2,1,1.16,88.27,Below Reorder
+R_Aurangabad,04-03-2024,A,240,239,0,Assembly,Bosch,Body_Parts,2,67,Material_Shortage,548,597,73523.91,5,0.0,99.58,Below Reorder
+R_Aurangabad,02-09-2024,B,192,156,4,Assembly,ZF,Body_Parts,10,55,Power_Failure,630,471,64476.43,3,2.56,81.25,Optimal
+R_Chakan,02-07-2024,C,228,203,12,No Defect,Mahindra_Suppliers,Electronics,11,30,Maintenance,705,407,70099.02,4,5.91,89.04,Optimal
+R_Pune,30-06-2024,B,195,187,14,No Defect,Valeo,Engine_Parts,3,17,Material_Shortage,262,422,62821.89,5,7.49,95.9,Below Reorder
+R_Pune,22-10-2024,B,221,183,12,Painting,Valeo,Electronics,6,147,Maintenance,304,436,77851.17,4,6.56,82.81,Below Reorder
+R_Chakan,01-01-2024,C,234,223,6,Electrical,Valeo,Engine_Parts,15,105,Maintenance,890,530,60386.68,1,2.69,95.3,Optimal
+R_Aurangabad,06-05-2024,B,225,206,13,Electrical,Continental,Body_Parts,9,109,Machine_Failure,557,500,70871.01,0,6.31,91.56,Optimal
+R_Aurangabad,14-01-2024,B,242,226,13,No Defect,ZF,Electronics,13,164,Material_Shortage,392,527,63752.53,4,5.75,93.39,Below Reorder
+R_Pune,10-09-2024,A,226,221,11,Electrical,Valeo,Gearbox,10,33,Material_Shortage,641,475,51593.74,1,4.98,97.79,Optimal
+R_Pune,15-02-2024,B,221,201,12,Painting,Bosch,Engine_Parts,8,58,Material_Shortage,1116,327,79337.98,3,5.97,90.95,Optimal
+R_Chakan,20-10-2024,C,208,185,1,Welding,Continental,Gearbox,11,60,Material_Shortage,677,459,53687.99,5,0.54,88.94,Optimal
+R_Chakan,31-03-2024,C,230,199,2,No Defect,ZF,Engine_Parts,3,178,Machine_Failure,1157,595,75834.07,4,1.01,86.52,Optimal
+R_Aurangabad,07-05-2024,B,210,200,8,Welding,Continental,Electronics,3,62,Maintenance,277,445,64297.4,2,4.0,95.24,Below Reorder
+R_Pune,03-02-2024,C,251,219,8,Assembly,Valeo,Gearbox,3,158,Maintenance,272,468,61081.7,1,3.65,87.25,Below Reorder
+R_Aurangabad,04-01-2024,A,248,243,12,Welding,Mahindra_Suppliers,Body_Parts,8,23,Machine_Failure,250,360,79440.26,3,4.94,97.98,Below Reorder
+R_Aurangabad,25-05-2024,B,239,222,5,Assembly,Continental,Gearbox,14,38,Power_Failure,985,533,70145.92,3,2.25,92.89,Optimal
+R_Aurangabad,04-08-2024,A,238,223,7,Assembly,ZF,Electronics,2,162,Material_Shortage,933,484,64381.61,0,3.14,93.7,Optimal
+R_Pune,28-06-2024,C,181,148,3,Assembly,Continental,Engine_Parts,6,109,Material_Shortage,576,520,74804.5,3,2.03,81.77,Optimal
+R_Aurangabad,30-01-2024,B,183,156,3,Painting,Bosch,Electronics,5,108,Power_Failure,995,372,61136.48,4,1.92,85.25,Optimal
+R_Chakan,20-04-2024,A,234,216,14,Electrical,Valeo,Engine_Parts,3,29,Power_Failure,719,427,49222.95,5,6.48,92.31,Optimal
+R_Pune,13-09-2024,C,200,181,14,No Defect,Valeo,Engine_Parts,7,125,Material_Shortage,1087,439,45845.86,0,7.73,90.5,Optimal
+R_Aurangabad,14-09-2024,A,230,204,0,Assembly,Continental,Engine_Parts,8,71,Machine_Failure,1107,437,51481.6,5,0.0,88.7,Optimal
+R_Pune,15-06-2024,C,201,191,0,Painting,Bosch,Gearbox,2,115,Maintenance,281,370,46600.86,4,0.0,95.02,Below Reorder
+R_Chakan,21-05-2024,B,244,204,10,Electrical,ZF,Engine_Parts,14,61,Material_Shortage,1119,498,45647.19,1,4.9,83.61,Optimal
+R_Chakan,13-03-2024,A,212,212,15,Welding,Bosch,Engine_Parts,15,47,Power_Failure,788,378,54676.35,0,7.08,100.0,Optimal
+R_Pune,06-02-2024,B,220,214,10,Electrical,Mahindra_Suppliers,Gearbox,8,147,Maintenance,618,569,68662.55,5,4.67,97.27,Optimal
+R_Pune,22-04-2024,B,225,225,5,Painting,ZF,Electronics,4,166,Maintenance,206,500,67479.36,4,2.22,100.0,Below Reorder
+R_Aurangabad,15-10-2024,A,236,229,11,Assembly,ZF,Engine_Parts,4,128,Maintenance,1159,326,55540.6,5,4.8,97.03,Optimal
+R_Pune,13-03-2024,C,213,210,14,Assembly,Bosch,Gearbox,4,89,Maintenance,527,342,62923.58,1,6.67,98.59,Optimal
+R_Aurangabad,31-05-2024,B,184,180,7,Assembly,Continental,Engine_Parts,8,105,Machine_Failure,237,565,53489.39,4,3.89,97.83,Below Reorder
+R_Pune,18-03-2024,A,251,238,7,Assembly,Valeo,Engine_Parts,10,32,Power_Failure,924,374,69496.68,5,2.94,94.82,Optimal
+R_Aurangabad,16-03-2024,A,248,232,10,Painting,Mahindra_Suppliers,Gearbox,11,89,Maintenance,746,571,78037.71,5,4.31,93.55,Optimal
+R_Aurangabad,30-04-2024,B,197,173,14,Painting,Bosch,Gearbox,12,80,Maintenance,766,489,45776.34,3,8.09,87.82,Optimal
+R_Pune,27-01-2024,B,234,202,1,Painting,Continental,Gearbox,11,21,Power_Failure,960,467,53857.68,1,0.5,86.32,Optimal
+R_Pune,01-01-2024,C,193,173,15,Welding,Bosch,Engine_Parts,5,100,Maintenance,238,519,67877.34,4,8.67,89.64,Below Reorder
+R_Chakan,12-06-2024,C,214,211,9,Electrical,Bosch,Body_Parts,12,113,Material_Shortage,1011,442,61094.68,5,4.27,98.6,Optimal
+R_Pune,27-02-2024,C,258,236,15,No Defect,Valeo,Electronics,11,22,Material_Shortage,543,420,73825.57,5,6.36,91.47,Optimal
+R_Pune,09-10-2024,B,234,197,2,Electrical,Bosch,Gearbox,7,153,Machine_Failure,855,486,63775.79,5,1.02,84.19,Optimal
+R_Chakan,06-06-2024,C,254,243,9,Welding,ZF,Engine_Parts,15,2,Power_Failure,907,374,68129.49,0,3.7,95.67,Optimal
+R_Chakan,28-09-2024,A,240,224,9,Electrical,Continental,Engine_Parts,14,161,Machine_Failure,808,362,50312.5,5,4.02,93.33,Optimal
+R_Pune,02-10-2024,A,189,151,7,No Defect,Valeo,Body_Parts,4,90,Material_Shortage,825,520,53893.06,4,4.64,79.89,Optimal
+R_Pune,16-06-2024,C,186,149,13,Assembly,Bosch,Engine_Parts,6,111,Power_Failure,432,563,61613.76,0,8.72,80.11,Below Reorder
+R_Aurangabad,19-07-2024,C,258,225,7,No Defect,Bosch,Body_Parts,11,148,Material_Shortage,324,325,59435.3,3,3.11,87.21,Below Reorder
+R_Pune,25-08-2024,A,195,169,15,No Defect,Mahindra_Suppliers,Gearbox,10,56,Material_Shortage,1015,463,63327.8,5,8.88,86.67,Optimal
+R_Aurangabad,28-09-2024,B,229,192,13,No Defect,Valeo,Body_Parts,6,13,Machine_Failure,421,412,48806.67,4,6.77,83.84,Optimal
+R_Aurangabad,09-07-2024,B,196,192,12,Welding,ZF,Engine_Parts,7,47,Maintenance,273,367,78395.05,2,6.25,97.96,Below Reorder
+R_Aurangabad,31-03-2024,C,232,232,8,Assembly,Continental,Electronics,13,56,Power_Failure,224,575,49387.22,2,3.45,100.0,Below Reorder
+R_Aurangabad,16-05-2024,C,259,232,15,Electrical,Continental,Engine_Parts,14,115,Maintenance,853,447,58853.06,2,6.47,89.58,Optimal
+R_Aurangabad,04-05-2024,C,253,231,3,Painting,Continental,Body_Parts,12,146,Machine_Failure,371,369,58120.24,5,1.3,91.3,Optimal
+R_Aurangabad,24-06-2024,B,185,181,1,Assembly,ZF,Engine_Parts,6,7,Maintenance,919,399,60971.74,0,0.55,97.84,Optimal
+R_Pune,02-07-2024,B,193,170,1,Welding,Bosch,Body_Parts,13,159,Machine_Failure,315,417,51882.38,4,0.59,88.08,Below Reorder
+R_Pune,24-09-2024,B,257,238,11,Electrical,Continental,Gearbox,2,140,Power_Failure,264,305,55172.99,3,4.62,92.61,Below Reorder
+R_Pune,02-06-2024,C,238,209,11,Electrical,Continental,Engine_Parts,12,149,Power_Failure,1093,407,69495.51,1,5.26,87.82,Optimal
+R_Pune,19-07-2024,C,223,219,7,Painting,Bosch,Body_Parts,14,73,Maintenance,1191,544,65980.9,5,3.2,98.21,Optimal
+R_Chakan,15-08-2024,B,187,165,5,Welding,Bosch,Electronics,12,109,Power_Failure,380,332,60733.49,5,3.03,88.24,Optimal
+R_Chakan,22-10-2024,A,223,217,12,No Defect,ZF,Gearbox,14,50,Material_Shortage,425,433,73815.16,5,5.53,97.31,Below Reorder
+R_Aurangabad,01-07-2024,C,221,186,5,Electrical,Continental,Gearbox,3,114,Maintenance,542,388,57791.47,4,2.69,84.16,Optimal
+R_Aurangabad,26-03-2024,B,237,204,1,No Defect,Continental,Engine_Parts,8,177,Machine_Failure,998,547,63087.24,4,0.49,86.08,Optimal
+R_Chakan,30-05-2024,B,250,246,9,Welding,Mahindra_Suppliers,Engine_Parts,3,26,Maintenance,470,332,52322.46,4,3.66,98.4,Optimal
+R_Chakan,23-01-2024,C,255,254,15,Welding,Bosch,Engine_Parts,4,36,Material_Shortage,550,373,63835.26,2,5.91,99.61,Optimal
+R_Chakan,02-01-2024,A,222,220,13,Welding,Valeo,Engine_Parts,9,83,Machine_Failure,740,467,69172.52,5,5.91,99.1,Optimal
+R_Aurangabad,09-03-2024,A,207,189,5,Electrical,Mahindra_Suppliers,Gearbox,12,85,Material_Shortage,488,395,79950.53,1,2.65,91.3,Optimal
+R_Pune,11-08-2024,A,257,231,8,Assembly,ZF,Electronics,8,61,Maintenance,734,352,76976.32,1,3.46,89.88,Optimal
+R_Chakan,16-05-2024,A,225,208,14,Painting,Mahindra_Suppliers,Body_Parts,12,131,Material_Shortage,646,304,47578.11,0,6.73,92.44,Optimal
+R_Aurangabad,03-10-2024,B,253,213,2,Assembly,Mahindra_Suppliers,Electronics,12,8,Machine_Failure,356,564,56229.34,5,0.94,84.19,Below Reorder
+R_Pune,21-06-2024,C,243,209,2,Welding,Valeo,Body_Parts,11,13,Material_Shortage,1087,519,46042.32,1,0.96,86.01,Optimal
+R_Chakan,29-02-2024,B,221,187,12,Painting,ZF,Body_Parts,4,78,Maintenance,397,442,61081.02,0,6.42,84.62,Below Reorder
+R_Aurangabad,12-03-2024,C,239,233,9,Assembly,Valeo,Electronics,2,7,Machine_Failure,1171,326,71365.05,3,3.86,97.49,Optimal
+R_Pune,20-09-2024,A,232,212,6,Welding,Bosch,Gearbox,12,160,Maintenance,899,304,78756.69,4,2.83,91.38,Optimal
+R_Pune,09-05-2024,C,232,226,14,Assembly,Bosch,Engine_Parts,11,16,Machine_Failure,835,449,63625.01,4,6.19,97.41,Optimal
+R_Aurangabad,26-06-2024,A,227,216,0,Electrical,Valeo,Body_Parts,10,53,Material_Shortage,242,491,50572.66,1,0.0,95.15,Below Reorder
+R_Chakan,31-07-2024,B,186,154,7,No Defect,Continental,Engine_Parts,8,55,Material_Shortage,1002,482,56114.52,1,4.55,82.8,Optimal
+R_Pune,08-10-2024,B,189,186,15,Painting,Mahindra_Suppliers,Electronics,12,92,Material_Shortage,835,317,61592.59,2,8.06,98.41,Optimal
+R_Pune,20-09-2024,C,208,173,14,Assembly,Mahindra_Suppliers,Body_Parts,10,180,Maintenance,1186,389,77396.59,4,8.09,83.17,Optimal
+R_Chakan,24-04-2024,A,228,206,3,No Defect,Continental,Electronics,2,97,Maintenance,807,359,63987.63,5,1.46,90.35,Optimal
+R_Chakan,07-03-2024,C,201,199,8,Painting,Bosch,Engine_Parts,2,163,Material_Shortage,252,329,73340.68,2,4.02,99.0,Below Reorder
+R_Chakan,09-08-2024,B,231,213,15,No Defect,Mahindra_Suppliers,Engine_Parts,13,6,Power_Failure,638,498,50286.34,1,7.04,92.21,Optimal
+R_Chakan,26-08-2024,A,216,185,10,No Defect,Continental,Engine_Parts,9,178,Machine_Failure,585,309,54888.9,4,5.41,85.65,Optimal
+R_Chakan,21-05-2024,B,209,192,3,Electrical,Mahindra_Suppliers,Gearbox,3,171,Material_Shortage,1079,319,70931.72,2,1.56,91.87,Optimal
+R_Aurangabad,07-06-2024,C,251,222,15,Assembly,ZF,Body_Parts,7,29,Power_Failure,225,531,62956.64,0,6.76,88.45,Below Reorder
+R_Aurangabad,08-03-2024,B,250,237,2,Assembly,Mahindra_Suppliers,Gearbox,11,17,Material_Shortage,515,447,49791.42,1,0.84,94.8,Optimal
+R_Aurangabad,12-09-2024,C,202,193,9,Welding,Continental,Engine_Parts,13,48,Power_Failure,1000,326,62309.46,3,4.66,95.54,Optimal
+R_Chakan,24-05-2024,C,222,222,14,No Defect,ZF,Engine_Parts,10,76,Power_Failure,311,484,50928.89,2,6.31,100.0,Below Reorder
+R_Chakan,23-09-2024,B,198,195,10,Assembly,ZF,Engine_Parts,14,83,Power_Failure,294,541,51600.61,0,5.13,98.48,Below Reorder
+R_Aurangabad,07-06-2024,C,188,171,2,Electrical,Continental,Electronics,6,131,Material_Shortage,712,354,77021.76,3,1.17,90.96,Optimal
+R_Pune,10-08-2024,C,245,230,1,No Defect,Valeo,Gearbox,12,62,Power_Failure,604,527,74705.25,3,0.43,93.88,Optimal
+R_Pune,05-02-2024,A,231,225,0,Electrical,Mahindra_Suppliers,Gearbox,3,148,Maintenance,1096,535,61125.76,2,0.0,97.4,Optimal
+R_Aurangabad,22-09-2024,A,228,220,0,Welding,Valeo,Gearbox,9,172,Power_Failure,874,441,59474.13,5,0.0,96.49,Optimal
+R_Aurangabad,04-09-2024,C,229,216,13,Assembly,ZF,Engine_Parts,9,146,Machine_Failure,494,488,64451.6,2,6.02,94.32,Optimal
+R_Aurangabad,19-10-2024,A,255,227,12,No Defect,Valeo,Gearbox,5,5,Power_Failure,829,544,55785.12,1,5.29,89.02,Optimal
+R_Aurangabad,21-02-2024,A,223,184,6,Painting,Continental,Electronics,8,162,Maintenance,751,500,74264.4,3,3.26,82.51,Optimal
+R_Pune,09-03-2024,C,246,223,15,Electrical,Mahindra_Suppliers,Engine_Parts,13,78,Machine_Failure,948,481,74427.4,2,6.73,90.65,Optimal
+R_Pune,11-06-2024,A,221,181,8,Painting,Bosch,Electronics,5,142,Maintenance,350,396,62443.78,4,4.42,81.9,Below Reorder
+R_Pune,27-04-2024,A,212,197,14,Painting,ZF,Body_Parts,15,139,Power_Failure,363,372,58721.1,1,7.11,92.92,Below Reorder
+R_Aurangabad,07-02-2024,B,257,234,0,Welding,Valeo,Electronics,13,142,Power_Failure,1037,576,57247.6,0,0.0,91.05,Optimal
+R_Pune,21-05-2024,B,194,174,9,Painting,Valeo,Engine_Parts,12,122,Material_Shortage,932,429,56020.7,2,5.17,89.69,Optimal
+R_Chakan,25-10-2024,C,220,209,9,Painting,Valeo,Body_Parts,14,65,Maintenance,637,409,61942.12,2,4.31,95.0,Optimal
+R_Aurangabad,14-09-2024,A,201,161,11,Welding,Valeo,Gearbox,4,76,Material_Shortage,447,563,60578.14,4,6.83,80.1,Below Reorder
+R_Aurangabad,19-09-2024,B,181,180,3,Electrical,Continental,Engine_Parts,4,180,Maintenance,780,391,57087.88,3,1.67,99.45,Optimal
+R_Aurangabad,15-10-2024,A,237,205,9,Assembly,Valeo,Electronics,8,137,Machine_Failure,596,346,60905.16,5,4.39,86.5,Optimal
+R_Pune,17-07-2024,A,191,153,4,Assembly,Mahindra_Suppliers,Body_Parts,8,170,Maintenance,499,545,74800.16,0,2.61,80.1,Below Reorder
+R_Aurangabad,20-05-2024,B,240,226,4,Welding,ZF,Engine_Parts,3,162,Maintenance,760,553,53972.9,0,1.77,94.17,Optimal
+R_Aurangabad,27-04-2024,A,212,208,3,No Defect,Mahindra_Suppliers,Engine_Parts,12,131,Power_Failure,779,468,62549.46,3,1.44,98.11,Optimal
+R_Chakan,18-02-2024,C,219,180,5,Painting,Continental,Body_Parts,13,6,Material_Shortage,311,324,46610.79,1,2.78,82.19,Below Reorder
+R_Aurangabad,02-05-2024,B,185,175,15,Painting,Mahindra_Suppliers,Body_Parts,3,51,Material_Shortage,299,550,49589.38,1,8.57,94.59,Below Reorder
+R_Pune,03-05-2024,C,214,202,6,Painting,Continental,Engine_Parts,8,128,Maintenance,959,375,51324.98,5,2.97,94.39,Optimal
+R_Pune,16-07-2024,B,257,252,15,Assembly,ZF,Gearbox,6,103,Maintenance,951,369,53937.77,1,5.95,98.05,Optimal
+R_Chakan,08-07-2024,A,250,250,14,Welding,ZF,Gearbox,10,55,Power_Failure,758,379,54950.69,2,5.6,100.0,Optimal
+R_Pune,24-05-2024,A,207,203,5,No Defect,ZF,Gearbox,2,134,Material_Shortage,845,568,75890.02,0,2.46,98.07,Optimal
+R_Chakan,12-10-2024,B,243,225,13,Assembly,Valeo,Electronics,13,85,Machine_Failure,943,561,45850.99,2,5.78,92.59,Optimal
+R_Chakan,27-10-2024,B,235,202,2,Assembly,Mahindra_Suppliers,Electronics,11,167,Maintenance,484,563,74748.41,0,0.99,85.96,Below Reorder
+R_Aurangabad,22-06-2024,A,215,193,10,Welding,Valeo,Electronics,11,155,Power_Failure,285,396,72255.31,0,5.18,89.77,Below Reorder
+R_Aurangabad,03-07-2024,C,203,184,5,No Defect,Valeo,Body_Parts,13,75,Machine_Failure,710,563,66463.93,4,2.72,90.64,Optimal
+R_Pune,02-05-2024,B,258,255,5,No Defect,ZF,Engine_Parts,4,141,Machine_Failure,573,326,52669.21,2,1.96,98.84,Optimal
+R_Aurangabad,11-09-2024,A,196,195,9,Electrical,ZF,Electronics,4,60,Material_Shortage,274,377,58702.95,3,4.62,99.49,Below Reorder
+R_Pune,02-09-2024,A,219,197,6,Painting,Valeo,Engine_Parts,12,173,Machine_Failure,1031,558,46158.49,2,3.05,89.95,Optimal
+R_Pune,15-04-2024,B,233,219,5,Painting,Continental,Engine_Parts,10,37,Material_Shortage,469,347,72585.74,3,2.28,93.99,Optimal
+R_Pune,08-04-2024,A,229,229,0,No Defect,Bosch,Electronics,3,38,Material_Shortage,398,304,66352.67,2,0.0,100.0,Optimal
+R_Chakan,30-06-2024,C,184,168,15,Welding,Valeo,Electronics,5,84,Material_Shortage,211,486,70862.8,0,8.93,91.3,Below Reorder
+R_Chakan,01-09-2024,B,208,187,11,Welding,Continental,Body_Parts,12,174,Material_Shortage,1136,430,66329.29,2,5.88,89.9,Optimal
+R_Aurangabad,20-10-2024,C,210,206,6,No Defect,Valeo,Body_Parts,2,146,Maintenance,393,346,60924.39,2,2.91,98.1,Optimal
+R_Pune,24-03-2024,B,248,217,4,No Defect,Mahindra_Suppliers,Body_Parts,9,60,Maintenance,290,449,68081.06,4,1.84,87.5,Below Reorder
+R_Aurangabad,11-09-2024,A,255,224,15,Painting,Continental,Gearbox,9,35,Power_Failure,887,394,53207.53,0,6.7,87.84,Optimal
+R_Chakan,31-07-2024,B,240,217,14,Welding,Bosch,Electronics,11,116,Material_Shortage,511,427,64925.83,4,6.45,90.42,Optimal
+R_Pune,04-07-2024,C,259,259,9,Electrical,Valeo,Engine_Parts,4,30,Machine_Failure,1178,346,74788.54,2,3.47,100.0,Optimal
+R_Chakan,01-07-2024,C,189,151,0,Welding,ZF,Engine_Parts,7,167,Maintenance,292,334,76965.38,5,0.0,79.89,Below Reorder
+R_Chakan,12-06-2024,B,210,207,4,Welding,ZF,Gearbox,13,55,Material_Shortage,956,418,56580.87,5,1.93,98.57,Optimal
+R_Chakan,21-08-2024,A,190,170,14,Painting,Valeo,Engine_Parts,7,64,Maintenance,847,389,54758.78,4,8.24,89.47,Optimal
+R_Chakan,20-08-2024,B,259,242,0,Painting,Bosch,Engine_Parts,3,143,Power_Failure,203,574,53830.29,5,0.0,93.44,Below Reorder
+R_Chakan,12-09-2024,A,216,210,11,Assembly,Continental,Electronics,12,14,Machine_Failure,978,324,67479.35,1,5.24,97.22,Optimal
+R_Aurangabad,13-08-2024,C,230,197,0,Electrical,ZF,Engine_Parts,4,168,Material_Shortage,784,369,69259.07,4,0.0,85.65,Optimal
+R_Chakan,23-09-2024,C,197,179,3,Assembly,ZF,Electronics,9,96,Machine_Failure,788,360,64284.93,3,1.68,90.86,Optimal
+R_Chakan,25-10-2024,A,226,215,11,Welding,Valeo,Electronics,5,62,Machine_Failure,439,470,69370.12,0,5.12,95.13,Below Reorder
+R_Chakan,21-01-2024,C,198,185,14,Welding,Bosch,Electronics,7,89,Machine_Failure,481,544,79730.58,4,7.57,93.43,Below Reorder
+R_Pune,17-10-2024,A,259,252,15,Assembly,Bosch,Gearbox,9,173,Power_Failure,458,355,73103.7,4,5.95,97.3,Optimal
+R_Chakan,18-02-2024,B,256,221,14,Assembly,Mahindra_Suppliers,Engine_Parts,7,30,Power_Failure,215,514,74223.28,4,6.33,86.33,Below Reorder
+R_Aurangabad,28-03-2024,C,235,214,4,Welding,Mahindra_Suppliers,Engine_Parts,2,4,Machine_Failure,665,451,62495.99,2,1.87,91.06,Optimal
+R_Aurangabad,19-09-2024,B,223,210,3,Assembly,Continental,Gearbox,6,64,Power_Failure,429,405,67006.47,3,1.43,94.17,Optimal
+R_Chakan,30-06-2024,B,227,218,15,Electrical,Continental,Gearbox,3,32,Power_Failure,1133,447,59284.52,3,6.88,96.04,Optimal
+R_Pune,10-05-2024,A,253,244,4,No Defect,Bosch,Gearbox,11,96,Power_Failure,958,482,57727.11,1,1.64,96.44,Optimal
+R_Chakan,06-02-2024,C,218,203,0,No Defect,Continental,Gearbox,12,109,Power_Failure,1164,491,53783.37,4,0.0,93.12,Optimal
+R_Pune,20-04-2024,B,254,238,2,Assembly,Continental,Body_Parts,15,71,Maintenance,948,549,77446.93,1,0.84,93.7,Optimal
+R_Pune,21-04-2024,C,239,222,6,Painting,Mahindra_Suppliers,Engine_Parts,14,77,Maintenance,586,589,68283.48,1,2.7,92.89,Below Reorder
+R_Chakan,09-08-2024,C,241,236,15,Assembly,ZF,Gearbox,9,68,Maintenance,304,549,56102.08,5,6.36,97.93,Below Reorder
+R_Pune,02-07-2024,A,229,199,4,Welding,ZF,Body_Parts,14,118,Power_Failure,332,391,46315.09,0,2.01,86.9,Below Reorder
+R_Pune,21-02-2024,A,192,157,15,Electrical,Mahindra_Suppliers,Body_Parts,13,84,Material_Shortage,498,389,61999.86,3,9.55,81.77,Optimal
+R_Pune,12-09-2024,C,199,162,3,Electrical,Bosch,Engine_Parts,13,105,Machine_Failure,461,591,65822.9,5,1.85,81.41,Below Reorder
+R_Chakan,17-02-2024,C,244,243,15,No Defect,Mahindra_Suppliers,Gearbox,10,95,Machine_Failure,800,452,55522.48,3,6.17,99.59,Optimal
+R_Aurangabad,03-03-2024,B,251,222,8,Welding,Bosch,Gearbox,3,75,Maintenance,209,525,61463.46,5,3.6,88.45,Below Reorder
+R_Pune,23-10-2024,C,180,178,6,Welding,Bosch,Engine_Parts,7,171,Power_Failure,779,418,70919.84,2,3.37,98.89,Optimal
+R_Aurangabad,17-01-2024,A,185,153,9,No Defect,Continental,Body_Parts,10,134,Maintenance,688,587,61219.22,3,5.88,82.7,Optimal
+R_Chakan,02-09-2024,A,253,216,4,Assembly,ZF,Electronics,4,82,Power_Failure,948,437,73616.37,3,1.85,85.38,Optimal
+R_Chakan,09-03-2024,B,192,188,6,Welding,Bosch,Body_Parts,10,154,Machine_Failure,687,483,76997.63,2,3.19,97.92,Optimal
+R_Aurangabad,06-01-2024,A,229,194,9,Electrical,Bosch,Body_Parts,14,79,Material_Shortage,410,465,55573.96,0,4.64,84.72,Below Reorder
+R_Pune,03-10-2024,A,184,172,15,No Defect,Bosch,Gearbox,8,159,Power_Failure,414,427,54571.53,4,8.72,93.48,Below Reorder
+R_Aurangabad,07-07-2024,B,257,229,10,Welding,Valeo,Body_Parts,7,6,Material_Shortage,873,391,51248.54,4,4.37,89.11,Optimal
+R_Aurangabad,26-03-2024,B,212,185,2,Electrical,Bosch,Electronics,3,149,Material_Shortage,683,428,67472.27,0,1.08,87.26,Optimal
+R_Chakan,10-01-2024,B,210,193,1,No Defect,Continental,Electronics,12,137,Material_Shortage,547,536,66922.55,5,0.52,91.9,Optimal
+R_Chakan,11-02-2024,A,186,148,6,Painting,Mahindra_Suppliers,Electronics,10,95,Power_Failure,426,422,53637.42,0,4.05,79.57,Optimal
+R_Pune,01-07-2024,B,191,155,8,Electrical,Continental,Gearbox,11,102,Maintenance,770,589,46855.83,1,5.16,81.15,Optimal
+R_Pune,28-07-2024,B,186,150,15,Electrical,Bosch,Body_Parts,7,142,Maintenance,774,529,53959.19,0,10.0,80.65,Optimal
+R_Pune,01-04-2024,C,249,221,4,No Defect,Mahindra_Suppliers,Body_Parts,7,166,Maintenance,262,502,54769.92,0,1.81,88.76,Below Reorder
+R_Chakan,06-09-2024,C,190,172,5,No Defect,Mahindra_Suppliers,Gearbox,4,29,Power_Failure,724,460,59967.91,5,2.91,90.53,Optimal
+R_Pune,14-09-2024,C,195,169,10,Welding,Continental,Gearbox,4,92,Machine_Failure,811,456,47522.1,3,5.92,86.67,Optimal
+R_Pune,24-01-2024,C,188,173,1,Painting,Mahindra_Suppliers,Gearbox,11,52,Power_Failure,444,457,70970.9,4,0.58,92.02,Below Reorder
+R_Pune,09-03-2024,C,239,235,5,Painting,Bosch,Body_Parts,14,172,Material_Shortage,660,600,60223.51,3,2.13,98.33,Optimal
+R_Chakan,19-08-2024,A,258,230,5,Assembly,Mahindra_Suppliers,Body_Parts,7,159,Maintenance,519,564,76906.77,5,2.17,89.15,Below Reorder
+R_Aurangabad,06-01-2024,A,218,210,5,Welding,Valeo,Gearbox,7,88,Material_Shortage,915,324,63324.18,5,2.38,96.33,Optimal
+R_Pune,21-01-2024,A,200,195,10,Electrical,Continental,Gearbox,7,9,Maintenance,835,382,75536.18,2,5.13,97.5,Optimal
+R_Chakan,08-05-2024,B,185,159,5,No Defect,ZF,Electronics,10,99,Maintenance,1052,495,65018.21,5,3.14,85.95,Optimal
+R_Aurangabad,30-09-2024,A,223,218,12,Welding,Valeo,Electronics,8,146,Power_Failure,794,306,60891.99,3,5.5,97.76,Optimal
+R_Pune,13-08-2024,C,213,181,1,Painting,Valeo,Engine_Parts,12,73,Maintenance,1172,531,63387.15,0,0.55,84.98,Optimal
+R_Pune,26-07-2024,B,183,180,6,Electrical,Bosch,Gearbox,7,102,Machine_Failure,982,416,51208.09,3,3.33,98.36,Optimal
+R_Chakan,04-09-2024,C,206,176,2,Painting,Mahindra_Suppliers,Electronics,14,159,Maintenance,489,316,75948.5,0,1.14,85.44,Optimal
+R_Chakan,25-07-2024,A,254,242,14,No Defect,Bosch,Body_Parts,15,106,Power_Failure,651,466,45471.28,0,5.79,95.28,Optimal
+R_Chakan,01-10-2024,C,239,211,11,No Defect,Continental,Body_Parts,6,138,Material_Shortage,1130,468,63932.98,5,5.21,88.28,Optimal
+R_Pune,26-10-2024,A,199,162,13,Electrical,Valeo,Body_Parts,6,118,Machine_Failure,275,463,78874.03,0,8.02,81.41,Below Reorder
+R_Chakan,12-04-2024,C,185,160,10,Painting,ZF,Gearbox,2,129,Material_Shortage,465,344,65527.32,3,6.25,86.49,Optimal
+R_Chakan,04-07-2024,C,229,227,8,Electrical,Continental,Body_Parts,3,23,Machine_Failure,993,366,53937.13,0,3.52,99.13,Optimal
+R_Aurangabad,30-04-2024,B,202,173,3,No Defect,Valeo,Body_Parts,13,81,Power_Failure,1094,550,45629.08,5,1.73,85.64,Optimal
+R_Pune,20-10-2024,A,208,178,13,Welding,Continental,Gearbox,7,177,Material_Shortage,1181,456,74734.05,2,7.3,85.58,Optimal
+R_Chakan,28-03-2024,B,239,220,8,No Defect,ZF,Body_Parts,7,120,Maintenance,830,479,76507.56,0,3.64,92.05,Optimal
+R_Pune,13-07-2024,A,219,201,4,Assembly,Mahindra_Suppliers,Gearbox,4,118,Machine_Failure,682,492,49802.03,0,1.99,91.78,Optimal
+R_Aurangabad,17-05-2024,C,201,188,11,Electrical,Bosch,Gearbox,3,110,Machine_Failure,1138,478,58442.85,5,5.85,93.53,Optimal
+R_Chakan,08-01-2024,C,258,241,13,Assembly,Continental,Gearbox,11,22,Power_Failure,959,383,65650.62,3,5.39,93.41,Optimal
+R_Aurangabad,21-03-2024,B,199,168,15,Painting,ZF,Electronics,12,137,Machine_Failure,852,490,45295.3,1,8.93,84.42,Optimal
+R_Pune,01-03-2024,A,249,234,0,No Defect,Continental,Engine_Parts,10,127,Material_Shortage,549,371,58458.85,2,0.0,93.98,Optimal
+R_Aurangabad,28-02-2024,C,222,191,2,Painting,Mahindra_Suppliers,Gearbox,9,41,Power_Failure,887,464,60329.69,1,1.05,86.04,Optimal
+R_Pune,22-05-2024,B,182,155,5,No Defect,Bosch,Gearbox,6,10,Machine_Failure,234,315,77274.42,2,3.23,85.16,Below Reorder
+R_Pune,05-01-2024,C,258,221,7,Welding,Mahindra_Suppliers,Body_Parts,4,97,Power_Failure,541,446,76700.26,1,3.17,85.66,Optimal
+R_Chakan,16-06-2024,B,232,227,1,No Defect,Valeo,Engine_Parts,4,19,Maintenance,403,529,59955.99,2,0.44,97.84,Below Reorder
+R_Chakan,11-08-2024,C,197,160,5,Electrical,Mahindra_Suppliers,Body_Parts,11,8,Material_Shortage,243,566,47032.7,5,3.12,81.22,Below Reorder
+R_Aurangabad,10-08-2024,B,236,214,7,Welding,Valeo,Electronics,12,76,Material_Shortage,784,341,47758.38,2,3.27,90.68,Optimal
+R_Chakan,10-02-2024,C,238,198,8,Painting,Bosch,Gearbox,7,29,Maintenance,480,500,55921.3,5,4.04,83.19,Below Reorder
+R_Aurangabad,08-02-2024,A,250,221,0,Electrical,Mahindra_Suppliers,Gearbox,6,1,Machine_Failure,665,358,56133.94,5,0.0,88.4,Optimal
+R_Chakan,15-05-2024,C,231,197,15,No Defect,ZF,Gearbox,13,157,Power_Failure,317,562,59447.89,0,7.61,85.28,Below Reorder
+R_Aurangabad,29-09-2024,C,209,176,13,No Defect,ZF,Engine_Parts,8,161,Power_Failure,449,430,78714.85,2,7.39,84.21,Optimal
+R_Chakan,15-08-2024,B,232,228,1,Electrical,ZF,Body_Parts,8,79,Material_Shortage,1048,325,67616.62,2,0.44,98.28,Optimal
+R_Aurangabad,13-07-2024,B,245,220,0,No Defect,Bosch,Engine_Parts,11,160,Maintenance,999,477,73917.49,2,0.0,89.8,Optimal
+R_Chakan,05-08-2024,C,255,223,12,Electrical,Continental,Body_Parts,12,75,Machine_Failure,833,454,53297.76,1,5.38,87.45,Optimal
+R_Aurangabad,26-10-2024,A,250,239,12,Welding,ZF,Body_Parts,14,166,Maintenance,314,306,78282.67,4,5.02,95.6,Optimal
+R_Chakan,21-07-2024,C,260,243,14,Electrical,Mahindra_Suppliers,Electronics,4,121,Power_Failure,1190,568,59624.85,2,5.76,93.46,Optimal
+R_Pune,01-07-2024,B,214,204,6,Painting,Continental,Electronics,15,165,Power_Failure,727,560,57628.83,4,2.94,95.33,Optimal
+R_Aurangabad,11-02-2024,B,232,196,4,Electrical,Bosch,Gearbox,14,135,Machine_Failure,481,593,56711.08,1,2.04,84.48,Below Reorder
+R_Aurangabad,19-05-2024,C,240,221,13,Painting,ZF,Engine_Parts,5,41,Material_Shortage,450,573,73904.02,0,5.88,92.08,Below Reorder
+R_Chakan,08-04-2024,B,219,219,15,Welding,Valeo,Electronics,2,46,Machine_Failure,1143,429,59149.94,1,6.85,100.0,Optimal
+R_Pune,05-03-2024,C,212,190,13,Assembly,Valeo,Body_Parts,8,168,Machine_Failure,641,469,58771.12,4,6.84,89.62,Optimal
+R_Chakan,29-04-2024,A,196,176,6,No Defect,ZF,Electronics,7,36,Maintenance,717,584,51308.36,3,3.41,89.8,Optimal
+R_Chakan,09-04-2024,B,227,214,4,Assembly,Continental,Electronics,9,23,Material_Shortage,1150,332,46610.33,0,1.87,94.27,Optimal
+R_Pune,08-05-2024,A,194,156,6,Welding,Continental,Body_Parts,11,115,Power_Failure,1180,522,49358.23,2,3.85,80.41,Optimal
+R_Pune,14-07-2024,A,189,169,14,Welding,ZF,Gearbox,10,31,Material_Shortage,410,571,56451.44,1,8.28,89.42,Below Reorder
+R_Chakan,31-08-2024,C,234,201,6,Welding,ZF,Gearbox,2,22,Material_Shortage,975,497,75999.2,5,2.99,85.9,Optimal
+R_Chakan,11-01-2024,A,224,214,4,Painting,Valeo,Body_Parts,10,60,Power_Failure,491,383,61501.89,3,1.87,95.54,Optimal
+R_Chakan,04-04-2024,B,233,230,4,Painting,Valeo,Engine_Parts,13,88,Maintenance,654,527,58859.98,3,1.74,98.71,Optimal
+R_Aurangabad,04-06-2024,B,188,168,10,Welding,Continental,Engine_Parts,11,19,Machine_Failure,1138,486,62635.81,3,5.95,89.36,Optimal
+R_Chakan,24-06-2024,C,233,214,1,Electrical,Continental,Gearbox,10,173,Material_Shortage,1136,346,49117.06,2,0.47,91.85,Optimal
+R_Chakan,15-10-2024,B,246,246,12,Welding,Valeo,Electronics,2,149,Machine_Failure,706,535,79336.99,4,4.88,100.0,Optimal
+R_Aurangabad,07-05-2024,C,230,217,15,Assembly,Bosch,Engine_Parts,3,125,Material_Shortage,383,499,56649.94,0,6.91,94.35,Below Reorder
+R_Aurangabad,12-04-2024,B,193,179,2,Painting,Valeo,Gearbox,12,79,Power_Failure,272,410,75986.31,3,1.12,92.75,Below Reorder
+R_Chakan,21-02-2024,B,220,212,9,No Defect,Valeo,Gearbox,2,29,Maintenance,601,452,54957.28,2,4.25,96.36,Optimal
+R_Chakan,20-09-2024,B,227,220,9,No Defect,Continental,Electronics,7,135,Machine_Failure,554,571,76003.08,5,4.09,96.92,Below Reorder
+R_Aurangabad,14-02-2024,A,195,159,12,Welding,Continental,Engine_Parts,2,133,Maintenance,1042,437,79137.08,3,7.55,81.54,Optimal
+R_Chakan,08-06-2024,B,240,232,1,Electrical,ZF,Engine_Parts,5,12,Material_Shortage,782,469,70335.63,5,0.43,96.67,Optimal
+R_Chakan,20-10-2024,B,239,214,15,Painting,Mahindra_Suppliers,Body_Parts,12,38,Maintenance,1119,597,48901.53,5,7.01,89.54,Optimal
+R_Pune,25-04-2024,C,190,152,11,Painting,Valeo,Gearbox,11,27,Power_Failure,813,524,61832.56,2,7.24,80.0,Optimal
+R_Aurangabad,12-04-2024,B,239,238,11,Electrical,Continental,Gearbox,6,149,Maintenance,805,508,76243.72,3,4.62,99.58,Optimal
+R_Chakan,22-02-2024,B,253,247,3,Welding,ZF,Engine_Parts,4,119,Material_Shortage,717,513,46840.49,5,1.21,97.63,Optimal
+R_Chakan,09-01-2024,A,202,200,13,Welding,Valeo,Electronics,6,73,Maintenance,729,484,46228.36,4,6.5,99.01,Optimal
+R_Aurangabad,16-01-2024,A,201,164,14,Assembly,ZF,Gearbox,2,170,Power_Failure,784,317,66622.64,3,8.54,81.59,Optimal
+R_Aurangabad,07-07-2024,C,242,231,3,Welding,Bosch,Gearbox,15,179,Material_Shortage,854,362,66161.68,0,1.3,95.45,Optimal
+R_Pune,04-02-2024,B,181,168,3,No Defect,Bosch,Body_Parts,14,13,Machine_Failure,304,566,62895.85,1,1.79,92.82,Below Reorder
+R_Aurangabad,02-07-2024,C,241,217,13,Painting,Bosch,Gearbox,11,170,Power_Failure,585,310,45432.56,5,5.99,90.04,Optimal
+R_Chakan,23-03-2024,C,190,175,5,Welding,Valeo,Engine_Parts,3,13,Machine_Failure,415,518,71259.9,0,2.86,92.11,Below Reorder
+R_Chakan,08-03-2024,C,240,231,15,Welding,Bosch,Electronics,3,63,Maintenance,393,324,77273.31,3,6.49,96.25,Optimal
+R_Aurangabad,13-03-2024,B,243,235,10,Painting,Continental,Engine_Parts,10,6,Power_Failure,875,425,69557.09,4,4.26,96.71,Optimal
+R_Pune,30-08-2024,A,210,196,12,Painting,Valeo,Gearbox,7,107,Machine_Failure,1058,427,53640.77,2,6.12,93.33,Optimal
+R_Chakan,06-06-2024,A,253,221,2,Painting,Valeo,Engine_Parts,7,131,Power_Failure,609,530,55896.48,2,0.9,87.35,Optimal
+R_Chakan,03-07-2024,B,185,172,15,Electrical,Bosch,Electronics,12,156,Machine_Failure,273,332,51873.04,1,8.72,92.97,Below Reorder
+R_Chakan,19-02-2024,A,217,201,7,Welding,Bosch,Gearbox,4,82,Maintenance,652,387,66576.86,5,3.48,92.63,Optimal
+R_Aurangabad,03-10-2024,A,198,181,9,Assembly,Continental,Gearbox,7,68,Maintenance,418,328,78917.07,2,4.97,91.41,Optimal
+R_Aurangabad,29-02-2024,A,236,210,9,No Defect,Continental,Engine_Parts,6,80,Power_Failure,494,553,52888.12,3,4.29,88.98,Below Reorder
+R_Chakan,23-07-2024,C,185,174,9,Electrical,Valeo,Electronics,6,67,Material_Shortage,869,485,52195.96,4,5.17,94.05,Optimal
+R_Chakan,21-10-2024,A,182,154,0,Painting,Mahindra_Suppliers,Gearbox,13,166,Machine_Failure,1039,510,69479.93,0,0.0,84.62,Optimal
+R_Chakan,28-04-2024,C,217,205,10,Assembly,Bosch,Engine_Parts,3,163,Machine_Failure,370,452,69076.16,0,4.88,94.47,Below Reorder
+R_Pune,16-01-2024,C,250,244,10,Electrical,Valeo,Gearbox,6,83,Power_Failure,686,329,49486.62,5,4.1,97.6,Optimal
+R_Aurangabad,27-08-2024,B,241,207,4,Painting,Continental,Body_Parts,7,86,Material_Shortage,247,440,60770.49,5,1.93,85.89,Below Reorder
+R_Aurangabad,26-04-2024,C,234,203,8,Assembly,Continental,Body_Parts,10,2,Machine_Failure,630,504,73763.55,3,3.94,86.75,Optimal
+R_Aurangabad,14-07-2024,A,249,226,7,Assembly,Bosch,Body_Parts,12,155,Material_Shortage,610,498,55280.72,0,3.1,90.76,Optimal
+R_Chakan,01-09-2024,A,200,186,0,Electrical,ZF,Body_Parts,15,147,Maintenance,1186,341,67420.92,4,0.0,93.0,Optimal
+R_Pune,29-09-2024,B,221,205,8,Assembly,Mahindra_Suppliers,Engine_Parts,5,170,Material_Shortage,325,375,50164.16,3,3.9,92.76,Below Reorder
+R_Aurangabad,21-02-2024,C,192,164,3,Welding,Mahindra_Suppliers,Electronics,12,46,Maintenance,959,354,49999.88,5,1.83,85.42,Optimal
+R_Pune,03-09-2024,A,187,180,15,Electrical,Valeo,Engine_Parts,8,178,Maintenance,375,459,50852.19,5,8.33,96.26,Below Reorder
+R_Chakan,14-08-2024,C,217,197,8,Welding,Continental,Engine_Parts,9,170,Material_Shortage,1079,378,45057.09,1,4.06,90.78,Optimal
+R_Aurangabad,26-09-2024,C,197,195,12,Welding,Mahindra_Suppliers,Engine_Parts,10,66,Maintenance,612,377,58484.09,0,6.15,98.98,Optimal
+R_Chakan,03-02-2024,A,208,187,13,Painting,ZF,Gearbox,5,158,Material_Shortage,920,428,59205.18,3,6.95,89.9,Optimal
+R_Pune,22-03-2024,C,180,167,0,No Defect,Bosch,Body_Parts,3,50,Maintenance,619,424,46971.94,0,0.0,92.78,Optimal
+R_Chakan,17-02-2024,B,186,156,13,No Defect,ZF,Engine_Parts,9,158,Material_Shortage,429,588,52922.95,5,8.33,83.87,Below Reorder
+R_Aurangabad,02-09-2024,B,222,192,3,Welding,Bosch,Body_Parts,6,106,Machine_Failure,1043,389,53335.37,2,1.56,86.49,Optimal
+R_Pune,11-02-2024,B,259,234,6,Electrical,Continental,Gearbox,10,91,Machine_Failure,677,463,72554.51,0,2.56,90.35,Optimal
+R_Chakan,23-04-2024,A,198,198,13,Painting,Continental,Electronics,8,47,Power_Failure,408,600,50987.11,4,6.57,100.0,Below Reorder
+R_Chakan,22-10-2024,A,214,183,12,Assembly,Mahindra_Suppliers,Engine_Parts,13,60,Maintenance,398,325,50353.36,2,6.56,85.51,Optimal
+R_Chakan,01-03-2024,C,213,202,11,Welding,Continental,Body_Parts,8,144,Material_Shortage,529,337,59749.52,2,5.45,94.84,Optimal
+R_Aurangabad,24-06-2024,C,199,179,3,Electrical,Continental,Body_Parts,9,134,Power_Failure,494,306,45532.27,5,1.68,89.95,Optimal
+R_Pune,27-10-2024,A,215,200,0,Electrical,Valeo,Body_Parts,6,179,Machine_Failure,366,484,68722.59,5,0.0,93.02,Below Reorder
+R_Chakan,23-01-2024,A,245,210,15,Painting,Bosch,Body_Parts,5,0,Maintenance,857,461,54908.51,1,7.14,85.71,Optimal
+R_Pune,02-06-2024,B,238,199,10,Assembly,Bosch,Gearbox,15,54,Maintenance,1124,402,55629.97,4,5.03,83.61,Optimal
+R_Pune,09-09-2024,A,227,193,10,Assembly,Valeo,Engine_Parts,5,176,Material_Shortage,672,302,73218.62,5,5.18,85.02,Optimal
+R_Pune,04-03-2024,A,213,192,9,Painting,Valeo,Engine_Parts,8,88,Maintenance,672,551,65849.72,4,4.69,90.14,Optimal
+R_Pune,18-05-2024,C,196,194,1,Assembly,ZF,Engine_Parts,3,64,Maintenance,1183,425,47261.62,4,0.52,98.98,Optimal
+R_Aurangabad,14-09-2024,B,227,227,1,Welding,ZF,Body_Parts,5,4,Material_Shortage,887,559,73344.7,1,0.44,100.0,Optimal
+R_Chakan,23-10-2024,B,214,199,8,Electrical,Valeo,Electronics,11,87,Power_Failure,586,527,50493.06,3,4.02,92.99,Optimal
+R_Chakan,19-06-2024,B,243,235,6,Painting,Valeo,Electronics,8,72,Material_Shortage,1043,361,46400.8,3,2.55,96.71,Optimal
+R_Pune,13-05-2024,B,182,165,13,Painting,Valeo,Gearbox,9,140,Maintenance,633,492,62843.46,2,7.88,90.66,Optimal
+R_Chakan,04-01-2024,B,257,221,12,Electrical,Valeo,Engine_Parts,9,99,Material_Shortage,476,421,64505.29,4,5.43,85.99,Optimal
+R_Pune,29-02-2024,C,250,232,11,Painting,Continental,Engine_Parts,13,83,Material_Shortage,522,553,70111.97,1,4.74,92.8,Below Reorder
+R_Pune,16-02-2024,B,224,220,14,Assembly,ZF,Gearbox,14,146,Material_Shortage,600,445,56793.58,2,6.36,98.21,Optimal
+R_Pune,23-06-2024,A,214,196,1,Electrical,Mahindra_Suppliers,Body_Parts,2,83,Power_Failure,575,567,45361.99,4,0.51,91.59,Optimal
+R_Aurangabad,13-03-2024,A,214,201,1,No Defect,Valeo,Electronics,10,121,Maintenance,1081,594,55842.34,0,0.5,93.93,Optimal
+R_Pune,03-07-2024,C,251,232,8,Assembly,Bosch,Gearbox,11,38,Maintenance,1019,405,46713.92,0,3.45,92.43,Optimal
+R_Chakan,27-09-2024,C,254,240,4,Painting,Valeo,Gearbox,3,95,Maintenance,302,571,48459.49,1,1.67,94.49,Below Reorder
+R_Aurangabad,07-01-2024,A,230,224,12,No Defect,Continental,Electronics,2,165,Maintenance,613,400,53818.04,2,5.36,97.39,Optimal
+R_Aurangabad,21-10-2024,C,238,209,11,Welding,Mahindra_Suppliers,Engine_Parts,12,70,Maintenance,1030,505,50950.16,3,5.26,87.82,Optimal
+R_Aurangabad,15-06-2024,B,189,182,7,Assembly,ZF,Electronics,9,56,Material_Shortage,561,367,49576.1,1,3.85,96.3,Optimal
+R_Pune,11-05-2024,C,233,204,10,No Defect,Continental,Engine_Parts,8,159,Machine_Failure,835,503,72163.05,3,4.9,87.55,Optimal
+R_Chakan,02-07-2024,A,184,180,11,No Defect,Valeo,Gearbox,9,67,Material_Shortage,881,382,74910.3,3,6.11,97.83,Optimal
+R_Chakan,27-10-2024,A,214,208,14,Electrical,Bosch,Gearbox,8,130,Machine_Failure,1185,352,50930.94,3,6.73,97.2,Optimal
+R_Pune,25-05-2024,B,222,184,4,Painting,Continental,Body_Parts,9,130,Power_Failure,438,384,58829.6,2,2.17,82.88,Optimal
+R_Pune,11-02-2024,B,199,163,7,Assembly,Valeo,Electronics,13,84,Power_Failure,792,358,64798.78,0,4.29,81.91,Optimal
+R_Chakan,23-08-2024,A,240,225,10,Electrical,Valeo,Gearbox,4,127,Machine_Failure,296,477,49116.99,3,4.44,93.75,Below Reorder
+R_Chakan,21-06-2024,C,195,190,14,Painting,Valeo,Body_Parts,13,21,Material_Shortage,973,463,59544.34,4,7.37,97.44,Optimal
+R_Chakan,19-01-2024,A,209,184,0,Assembly,Mahindra_Suppliers,Body_Parts,6,122,Machine_Failure,471,466,46841.22,2,0.0,88.04,Optimal
+R_Chakan,06-09-2024,C,181,149,4,Electrical,Valeo,Electronics,2,49,Machine_Failure,295,457,48216.68,4,2.68,82.32,Below Reorder
+R_Aurangabad,02-06-2024,C,183,150,15,Painting,Valeo,Engine_Parts,14,0,Material_Shortage,1070,382,46153.22,2,10.0,81.97,Optimal
+R_Chakan,02-01-2024,A,195,173,4,Electrical,Continental,Electronics,14,117,Maintenance,907,504,53095.24,4,2.31,88.72,Optimal
+R_Chakan,21-06-2024,A,253,218,9,Welding,Valeo,Body_Parts,15,122,Machine_Failure,266,464,47164.73,2,4.13,86.17,Below Reorder
+R_Aurangabad,31-03-2024,B,207,190,8,Welding,Mahindra_Suppliers,Engine_Parts,14,86,Machine_Failure,560,350,65998.21,3,4.21,91.79,Optimal
+R_Aurangabad,26-03-2024,A,227,220,8,Painting,Continental,Gearbox,15,4,Maintenance,649,437,55062.07,1,3.64,96.92,Optimal
+R_Chakan,28-09-2024,C,214,177,6,Painting,Mahindra_Suppliers,Electronics,8,45,Power_Failure,690,579,77259.11,1,3.39,82.71,Optimal
+R_Chakan,08-01-2024,C,217,200,8,No Defect,Mahindra_Suppliers,Body_Parts,11,176,Material_Shortage,212,355,70489.41,0,4.0,92.17,Below Reorder
+R_Pune,09-10-2024,C,237,226,9,Painting,Bosch,Gearbox,13,29,Maintenance,493,320,72689.66,4,3.98,95.36,Optimal
+R_Chakan,07-02-2024,C,222,214,8,Painting,Mahindra_Suppliers,Engine_Parts,9,33,Machine_Failure,262,440,60924.59,1,3.74,96.4,Below Reorder
+R_Pune,04-01-2024,B,207,194,0,Welding,ZF,Body_Parts,9,16,Maintenance,1056,428,73025.09,0,0.0,93.72,Optimal
+R_Aurangabad,19-10-2024,A,241,237,5,Electrical,Mahindra_Suppliers,Gearbox,14,11,Maintenance,412,488,76032.25,1,2.11,98.34,Below Reorder
+R_Aurangabad,14-05-2024,C,205,204,2,No Defect,Continental,Electronics,7,134,Material_Shortage,581,394,45091.5,3,0.98,99.51,Optimal
+R_Chakan,11-01-2024,A,235,215,10,Welding,Continental,Body_Parts,13,92,Power_Failure,719,460,75587.59,0,4.65,91.49,Optimal
+R_Pune,02-02-2024,B,254,227,11,No Defect,ZF,Electronics,13,16,Maintenance,203,463,70745.32,4,4.85,89.37,Below Reorder
+R_Chakan,15-07-2024,C,229,193,2,Assembly,Bosch,Engine_Parts,8,68,Material_Shortage,960,358,70512.01,0,1.04,84.28,Optimal
+R_Chakan,19-06-2024,C,212,194,11,No Defect,Valeo,Gearbox,14,172,Machine_Failure,328,520,69249.64,1,5.67,91.51,Below Reorder
+R_Chakan,29-02-2024,A,189,174,5,No Defect,Mahindra_Suppliers,Body_Parts,14,65,Material_Shortage,962,600,64193.7,1,2.87,92.06,Optimal
+R_Pune,06-09-2024,B,212,178,15,Assembly,Valeo,Gearbox,8,110,Material_Shortage,446,585,63040.25,2,8.43,83.96,Below Reorder
+R_Aurangabad,09-02-2024,B,203,172,3,Painting,Valeo,Electronics,5,151,Power_Failure,954,439,55012.49,3,1.74,84.73,Optimal
+R_Aurangabad,03-01-2024,C,210,197,4,Welding,Continental,Engine_Parts,4,0,Power_Failure,760,450,58429.51,3,2.03,93.81,Optimal
+R_Pune,09-05-2024,A,199,184,15,Assembly,Mahindra_Suppliers,Engine_Parts,2,93,Machine_Failure,704,337,63863.33,4,8.15,92.46,Optimal
+R_Aurangabad,03-09-2024,C,208,200,2,Assembly,ZF,Engine_Parts,14,52,Maintenance,746,594,61219.83,0,1.0,96.15,Optimal
+R_Aurangabad,21-03-2024,A,229,197,15,Assembly,Bosch,Body_Parts,9,56,Material_Shortage,1005,367,66580.6,5,7.61,86.03,Optimal
+R_Pune,12-03-2024,C,234,223,5,Assembly,Bosch,Engine_Parts,14,135,Machine_Failure,907,415,48332.66,5,2.24,95.3,Optimal
+R_Chakan,11-10-2024,C,202,188,3,No Defect,Mahindra_Suppliers,Engine_Parts,15,109,Material_Shortage,808,414,70486.62,2,1.6,93.07,Optimal
+R_Pune,29-09-2024,A,259,243,13,Electrical,ZF,Gearbox,5,150,Machine_Failure,748,544,51951.72,2,5.35,93.82,Optimal
+R_Pune,07-04-2024,A,195,180,13,No Defect,Bosch,Gearbox,6,22,Material_Shortage,670,575,58392.82,5,7.22,92.31,Optimal
+R_Chakan,09-09-2024,B,221,216,1,Painting,ZF,Gearbox,12,7,Maintenance,1015,439,50394.49,2,0.46,97.74,Optimal
+R_Aurangabad,08-05-2024,C,240,230,13,Assembly,Mahindra_Suppliers,Electronics,7,138,Power_Failure,829,549,67349.67,0,5.65,95.83,Optimal
+R_Pune,20-09-2024,C,214,207,4,No Defect,Mahindra_Suppliers,Body_Parts,9,24,Power_Failure,413,509,78955.87,5,1.93,96.73,Below Reorder
+R_Chakan,24-04-2024,A,217,178,5,Welding,Bosch,Engine_Parts,3,70,Material_Shortage,739,396,49500.98,1,2.81,82.03,Optimal
+R_Pune,06-10-2024,B,250,214,6,Welding,ZF,Engine_Parts,3,30,Material_Shortage,304,570,78919.96,5,2.8,85.6,Below Reorder
+R_Aurangabad,06-08-2024,C,222,208,11,Painting,Valeo,Engine_Parts,14,134,Material_Shortage,703,410,50089.81,4,5.29,93.69,Optimal
+R_Aurangabad,08-01-2024,C,190,159,4,Painting,Valeo,Engine_Parts,9,10,Maintenance,680,466,66040.45,4,2.52,83.68,Optimal
+R_Chakan,25-09-2024,C,181,174,11,Painting,Mahindra_Suppliers,Body_Parts,10,5,Machine_Failure,300,450,79420.73,0,6.32,96.13,Below Reorder
+R_Pune,06-10-2024,A,243,243,12,No Defect,ZF,Engine_Parts,5,118,Material_Shortage,354,391,55009.55,2,4.94,100.0,Below Reorder
+R_Pune,16-09-2024,B,226,202,2,Assembly,Valeo,Gearbox,10,160,Maintenance,509,450,52179.59,0,0.99,89.38,Optimal
+R_Chakan,15-03-2024,A,223,219,13,Welding,ZF,Body_Parts,15,3,Maintenance,829,499,62076.97,2,5.94,98.21,Optimal
+R_Pune,05-09-2024,B,209,188,10,Welding,Valeo,Body_Parts,12,170,Maintenance,730,363,65780.5,4,5.32,89.95,Optimal
+R_Chakan,21-06-2024,B,225,209,10,Assembly,Mahindra_Suppliers,Gearbox,8,89,Material_Shortage,1138,524,59176.65,5,4.78,92.89,Optimal
+R_Pune,19-09-2024,C,206,199,3,Assembly,Valeo,Engine_Parts,4,58,Machine_Failure,379,384,71871.91,2,1.51,96.6,Below Reorder
+R_Aurangabad,10-02-2024,C,210,184,9,Assembly,Bosch,Body_Parts,7,76,Maintenance,787,522,65168.09,2,4.89,87.62,Optimal
+R_Pune,22-05-2024,A,202,191,15,Electrical,ZF,Electronics,9,174,Power_Failure,233,472,50617.89,3,7.85,94.55,Below Reorder
+R_Aurangabad,03-02-2024,A,246,221,12,Assembly,Valeo,Gearbox,6,7,Machine_Failure,537,436,71033.5,2,5.43,89.84,Optimal
+R_Aurangabad,25-07-2024,A,231,229,4,No Defect,ZF,Engine_Parts,2,113,Power_Failure,387,532,56874.62,3,1.75,99.13,Below Reorder
+R_Pune,27-03-2024,C,230,209,14,Assembly,Mahindra_Suppliers,Electronics,12,8,Material_Shortage,598,309,60001.05,3,6.7,90.87,Optimal
+R_Aurangabad,12-09-2024,A,224,195,1,Welding,Mahindra_Suppliers,Electronics,9,114,Machine_Failure,725,403,52781.12,3,0.51,87.05,Optimal
+R_Chakan,20-06-2024,B,244,237,5,Assembly,Valeo,Body_Parts,14,47,Machine_Failure,1153,380,49593.22,5,2.11,97.13,Optimal
+R_Chakan,27-08-2024,A,257,240,8,Welding,Continental,Engine_Parts,5,0,Machine_Failure,726,576,77275.98,1,3.33,93.39,Optimal
+R_Chakan,18-05-2024,A,215,175,4,No Defect,Valeo,Body_Parts,11,168,Power_Failure,847,600,76002.07,4,2.29,81.4,Optimal
+R_Pune,26-03-2024,B,256,242,14,Welding,Valeo,Body_Parts,15,175,Maintenance,586,563,74634.77,0,5.79,94.53,Optimal
+R_Aurangabad,24-05-2024,A,229,226,0,Assembly,Bosch,Engine_Parts,2,60,Maintenance,470,505,58417.76,1,0.0,98.69,Below Reorder
+R_Pune,05-06-2024,C,182,155,4,Painting,Continental,Engine_Parts,3,117,Power_Failure,760,594,67544.85,5,2.58,85.16,Optimal
+R_Chakan,21-08-2024,B,187,172,0,Assembly,ZF,Body_Parts,13,8,Material_Shortage,453,492,52853.49,0,0.0,91.98,Below Reorder
+R_Chakan,29-05-2024,C,183,147,8,No Defect,Mahindra_Suppliers,Gearbox,7,105,Maintenance,990,430,51618.77,3,5.44,80.33,Optimal
+R_Chakan,23-08-2024,A,241,204,7,Painting,Mahindra_Suppliers,Body_Parts,10,74,Machine_Failure,457,387,64629.89,0,3.43,84.65,Optimal
+R_Pune,03-02-2024,A,217,215,0,Electrical,ZF,Gearbox,10,52,Power_Failure,741,406,65417.09,2,0.0,99.08,Optimal
+R_Pune,20-03-2024,C,212,201,6,Welding,ZF,Body_Parts,11,27,Maintenance,839,394,45916.48,4,2.99,94.81,Optimal
+R_Aurangabad,04-09-2024,A,226,202,7,Welding,Valeo,Gearbox,3,124,Machine_Failure,361,417,61815.85,1,3.47,89.38,Below Reorder
+R_Pune,12-01-2024,A,190,177,7,Assembly,Valeo,Body_Parts,13,64,Machine_Failure,875,388,59639.94,3,3.95,93.16,Optimal
+R_Aurangabad,11-08-2024,C,248,231,11,Assembly,Mahindra_Suppliers,Body_Parts,14,98,Maintenance,370,564,61857.68,4,4.76,93.15,Below Reorder
+R_Chakan,21-02-2024,C,205,165,11,Electrical,Mahindra_Suppliers,Body_Parts,15,148,Power_Failure,392,326,65181.4,3,6.67,80.49,Optimal
+R_Chakan,01-03-2024,C,197,182,1,No Defect,Continental,Engine_Parts,10,158,Material_Shortage,412,446,52771.64,3,0.55,92.39,Below Reorder
+R_Pune,17-06-2024,B,188,163,9,Painting,Bosch,Gearbox,13,23,Machine_Failure,406,486,53118.33,2,5.52,86.7,Below Reorder
+R_Pune,10-03-2024,A,181,179,14,Painting,Continental,Electronics,3,15,Machine_Failure,333,584,76566.57,0,7.82,98.9,Below Reorder
+R_Chakan,20-10-2024,C,235,215,14,Painting,Bosch,Gearbox,5,121,Power_Failure,1193,418,55125.25,5,6.51,91.49,Optimal
+R_Aurangabad,03-01-2024,B,240,218,7,No Defect,Mahindra_Suppliers,Body_Parts,3,166,Machine_Failure,502,563,69191.45,0,3.21,90.83,Below Reorder
+R_Chakan,09-01-2024,A,206,190,1,Electrical,Bosch,Engine_Parts,8,160,Machine_Failure,294,476,53826.6,1,0.53,92.23,Below Reorder
+R_Chakan,26-04-2024,A,182,151,12,Painting,Bosch,Body_Parts,15,113,Maintenance,863,465,64378.32,1,7.95,82.97,Optimal
+R_Chakan,02-04-2024,B,233,215,4,Painting,Continental,Engine_Parts,6,148,Machine_Failure,857,473,69490.74,4,1.86,92.27,Optimal
+R_Pune,04-05-2024,B,217,194,1,Welding,ZF,Body_Parts,11,177,Power_Failure,891,356,77975.71,4,0.52,89.4,Optimal
+R_Aurangabad,11-06-2024,A,247,234,15,Painting,Continental,Engine_Parts,6,30,Power_Failure,1029,584,71406.96,1,6.41,94.74,Optimal
+R_Pune,13-02-2024,C,200,164,1,Assembly,ZF,Engine_Parts,9,56,Machine_Failure,539,381,69405.45,4,0.61,82.0,Optimal
+R_Aurangabad,25-10-2024,C,188,153,1,No Defect,Mahindra_Suppliers,Engine_Parts,9,6,Power_Failure,1071,337,74828.34,2,0.65,81.38,Optimal
+R_Pune,19-02-2024,C,193,160,0,No Defect,Bosch,Electronics,5,114,Power_Failure,814,336,74998.45,2,0.0,82.9,Optimal
+R_Aurangabad,16-03-2024,A,248,241,4,Electrical,Bosch,Gearbox,9,16,Power_Failure,603,523,70837.08,5,1.66,97.18,Optimal
+R_Pune,13-06-2024,C,202,196,14,Painting,Mahindra_Suppliers,Gearbox,14,61,Material_Shortage,984,549,65244.24,3,7.14,97.03,Optimal
+R_Chakan,30-07-2024,A,200,171,0,Assembly,Valeo,Body_Parts,2,121,Power_Failure,342,556,76047.89,2,0.0,85.5,Below Reorder
+R_Aurangabad,30-03-2024,C,202,200,14,No Defect,Bosch,Body_Parts,14,62,Maintenance,432,527,77032.08,2,7.0,99.01,Below Reorder
+R_Chakan,21-08-2024,A,231,197,5,Electrical,Continental,Body_Parts,7,64,Maintenance,938,582,75091.92,5,2.54,85.28,Optimal
+R_Pune,23-06-2024,B,258,220,8,No Defect,Continental,Engine_Parts,11,56,Maintenance,910,449,46522.93,2,3.64,85.27,Optimal
+R_Aurangabad,06-07-2024,A,257,218,12,Assembly,Mahindra_Suppliers,Gearbox,4,73,Material_Shortage,736,360,54469.81,3,5.5,84.82,Optimal
+R_Aurangabad,12-04-2024,B,197,166,8,Assembly,Bosch,Electronics,14,102,Machine_Failure,896,310,75460.85,5,4.82,84.26,Optimal
+R_Chakan,11-03-2024,A,234,229,5,Assembly,ZF,Body_Parts,10,171,Machine_Failure,1179,385,57593.97,2,2.18,97.86,Optimal
+R_Chakan,29-09-2024,C,185,170,8,No Defect,ZF,Electronics,6,32,Material_Shortage,514,317,54684.03,3,4.71,91.89,Optimal
+R_Aurangabad,23-07-2024,C,208,169,14,No Defect,Bosch,Engine_Parts,5,58,Machine_Failure,861,387,54865.9,0,8.28,81.25,Optimal
+R_Chakan,21-01-2024,A,240,222,11,Electrical,Valeo,Engine_Parts,3,129,Power_Failure,417,432,56011.53,5,4.95,92.5,Below Reorder
+R_Aurangabad,13-01-2024,A,205,181,13,Welding,ZF,Engine_Parts,6,147,Power_Failure,931,588,66666.61,5,7.18,88.29,Optimal
+R_Aurangabad,05-06-2024,B,247,239,11,Welding,Continental,Engine_Parts,2,81,Power_Failure,794,451,60635.31,3,4.6,96.76,Optimal
+R_Chakan,18-06-2024,B,250,234,9,Assembly,Mahindra_Suppliers,Electronics,8,132,Material_Shortage,384,348,69645.1,5,3.85,93.6,Optimal
+R_Chakan,17-06-2024,C,209,200,0,No Defect,Bosch,Body_Parts,15,88,Power_Failure,294,322,70602.36,5,0.0,95.69,Below Reorder
+R_Chakan,19-02-2024,C,250,237,2,Painting,ZF,Body_Parts,9,174,Machine_Failure,461,510,50278.56,5,0.84,94.8,Below Reorder
+R_Pune,11-09-2024,C,260,221,12,Welding,Bosch,Body_Parts,7,36,Machine_Failure,655,319,59802.69,1,5.43,85.0,Optimal
+R_Aurangabad,11-01-2024,C,191,153,15,Electrical,Continental,Gearbox,9,14,Machine_Failure,1007,372,68318.96,4,9.8,80.1,Optimal
+R_Chakan,05-07-2024,B,193,165,15,No Defect,ZF,Gearbox,10,129,Power_Failure,213,563,64345.89,5,9.09,85.49,Below Reorder
+R_Chakan,29-04-2024,A,226,214,6,Welding,ZF,Engine_Parts,9,55,Machine_Failure,322,507,79636.53,0,2.8,94.69,Below Reorder
+R_Pune,24-06-2024,C,193,165,0,No Defect,Valeo,Engine_Parts,11,124,Machine_Failure,860,480,49665.98,5,0.0,85.49,Optimal
+R_Chakan,06-07-2024,B,250,228,0,Welding,Bosch,Body_Parts,10,29,Maintenance,846,408,60923.86,5,0.0,91.2,Optimal
+R_Chakan,07-03-2024,B,241,218,2,Assembly,ZF,Gearbox,8,76,Maintenance,984,518,66631.12,5,0.92,90.46,Optimal
+R_Chakan,09-08-2024,B,240,200,6,No Defect,ZF,Gearbox,10,99,Power_Failure,445,510,54937.93,1,3.0,83.33,Below Reorder
+R_Chakan,08-02-2024,C,187,187,1,Assembly,Continental,Gearbox,5,109,Material_Shortage,422,558,67735.85,4,0.53,100.0,Below Reorder
+R_Pune,21-01-2024,B,198,184,11,Assembly,ZF,Gearbox,8,46,Machine_Failure,1102,300,76026.52,1,5.98,92.93,Optimal
+R_Aurangabad,15-07-2024,A,198,192,6,Welding,Valeo,Gearbox,6,101,Maintenance,696,558,60028.27,0,3.12,96.97,Optimal
+R_Pune,11-03-2024,C,210,185,9,Painting,Valeo,Electronics,12,79,Material_Shortage,649,340,63077.88,3,4.86,88.1,Optimal
+R_Pune,29-05-2024,B,256,229,4,No Defect,ZF,Body_Parts,8,47,Maintenance,990,316,79656.67,4,1.75,89.45,Optimal
+R_Aurangabad,09-01-2024,B,242,229,3,Assembly,Continental,Electronics,7,169,Power_Failure,517,498,55931.69,1,1.31,94.63,Optimal
+R_Aurangabad,01-03-2024,A,209,189,2,Electrical,Mahindra_Suppliers,Electronics,9,141,Machine_Failure,227,539,75805.52,0,1.06,90.43,Below Reorder
+R_Chakan,19-02-2024,B,197,160,9,Painting,Mahindra_Suppliers,Gearbox,6,166,Machine_Failure,686,426,78193.07,2,5.62,81.22,Optimal
+R_Pune,11-05-2024,B,217,210,11,Painting,Bosch,Body_Parts,2,152,Power_Failure,913,521,56046.55,5,5.24,96.77,Optimal
+R_Chakan,20-04-2024,C,238,207,11,Assembly,ZF,Gearbox,8,37,Power_Failure,219,326,71694.5,2,5.31,86.97,Below Reorder
+R_Chakan,29-02-2024,B,202,187,6,Painting,Continental,Engine_Parts,13,136,Material_Shortage,1169,526,62174.8,0,3.21,92.57,Optimal
+R_Chakan,10-01-2024,B,246,237,0,Painting,Valeo,Body_Parts,14,104,Maintenance,618,497,76436.89,0,0.0,96.34,Optimal
+R_Aurangabad,14-09-2024,C,227,224,12,No Defect,Valeo,Electronics,10,149,Machine_Failure,436,387,49329.24,2,5.36,98.68,Optimal
+R_Aurangabad,07-03-2024,A,185,178,13,Electrical,Mahindra_Suppliers,Engine_Parts,13,118,Machine_Failure,551,431,50671.19,4,7.3,96.22,Optimal
+R_Chakan,21-05-2024,A,252,220,4,No Defect,Bosch,Engine_Parts,2,44,Material_Shortage,779,300,76484.16,5,1.82,87.3,Optimal
+R_Chakan,23-02-2024,C,257,249,9,Assembly,Bosch,Gearbox,15,114,Maintenance,388,550,62583.23,0,3.61,96.89,Below Reorder
+R_Aurangabad,15-04-2024,A,243,218,7,Welding,Mahindra_Suppliers,Gearbox,11,77,Power_Failure,1029,313,63343.21,5,3.21,89.71,Optimal
+R_Aurangabad,28-09-2024,C,233,227,11,Painting,Valeo,Electronics,5,118,Maintenance,732,532,73249.41,4,4.85,97.42,Optimal
+R_Aurangabad,13-05-2024,B,226,195,12,Welding,Mahindra_Suppliers,Electronics,9,25,Power_Failure,470,429,65219.57,2,6.15,86.28,Optimal
+R_Aurangabad,04-10-2024,C,200,191,5,Assembly,Mahindra_Suppliers,Gearbox,15,108,Maintenance,1002,488,57088.79,4,2.62,95.5,Optimal
+R_Pune,28-08-2024,B,237,213,11,Electrical,Bosch,Gearbox,10,168,Machine_Failure,836,513,60725.37,2,5.16,89.87,Optimal
+R_Chakan,03-05-2024,A,193,157,14,No Defect,Mahindra_Suppliers,Gearbox,2,72,Power_Failure,594,559,68493.45,0,8.92,81.35,Optimal
+R_Aurangabad,26-02-2024,C,215,179,13,Electrical,Bosch,Electronics,12,104,Material_Shortage,383,375,53506.43,4,7.26,83.26,Optimal
+R_Aurangabad,05-08-2024,B,233,194,15,Electrical,Valeo,Engine_Parts,4,175,Machine_Failure,922,382,66501.17,1,7.73,83.26,Optimal
+R_Aurangabad,08-07-2024,B,199,193,4,Electrical,Bosch,Body_Parts,13,150,Power_Failure,419,406,53520.27,2,2.07,96.98,Optimal
+R_Aurangabad,19-03-2024,B,214,178,9,Painting,ZF,Body_Parts,4,165,Power_Failure,420,372,49816.55,1,5.06,83.18,Optimal
+R_Pune,27-07-2024,A,219,214,3,Assembly,Continental,Electronics,8,92,Maintenance,543,320,47355.56,0,1.4,97.72,Optimal
+R_Aurangabad,24-05-2024,A,250,216,14,Welding,Bosch,Body_Parts,15,66,Power_Failure,560,583,79187.77,2,6.48,86.4,Below Reorder
+R_Pune,15-03-2024,C,232,214,6,No Defect,ZF,Engine_Parts,15,1,Material_Shortage,1167,411,66419.94,2,2.8,92.24,Optimal
+R_Chakan,09-09-2024,B,214,187,8,Painting,ZF,Gearbox,6,4,Material_Shortage,213,502,68873.26,4,4.28,87.38,Below Reorder
+R_Chakan,20-07-2024,B,244,239,2,No Defect,Valeo,Engine_Parts,9,53,Machine_Failure,914,598,73316.9,4,0.84,97.95,Optimal
+R_Pune,29-09-2024,A,226,199,7,Electrical,Bosch,Engine_Parts,4,101,Material_Shortage,269,522,76420.59,5,3.52,88.05,Below Reorder
+R_Chakan,11-02-2024,A,203,198,2,No Defect,Mahindra_Suppliers,Electronics,2,0,Material_Shortage,1167,539,69752.66,1,1.01,97.54,Optimal
+R_Chakan,03-06-2024,B,192,160,6,Electrical,Continental,Gearbox,13,108,Maintenance,272,422,65216.65,1,3.75,83.33,Below Reorder
+R_Chakan,04-08-2024,A,237,211,14,Assembly,Valeo,Gearbox,4,98,Machine_Failure,445,563,48569.41,0,6.64,89.03,Below Reorder
+R_Chakan,23-07-2024,A,184,165,3,Assembly,Bosch,Engine_Parts,10,177,Machine_Failure,798,519,47433.03,2,1.82,89.67,Optimal
+R_Chakan,14-10-2024,A,259,221,2,Welding,Valeo,Electronics,7,12,Power_Failure,687,593,60705.94,2,0.9,85.33,Optimal
+R_Chakan,02-10-2024,B,188,184,0,Assembly,Mahindra_Suppliers,Body_Parts,6,49,Power_Failure,534,396,70368.36,0,0.0,97.87,Optimal
+R_Chakan,05-07-2024,C,229,193,4,No Defect,Bosch,Body_Parts,11,32,Material_Shortage,210,441,73141.07,2,2.07,84.28,Below Reorder
+R_Pune,09-04-2024,B,181,148,11,Assembly,Mahindra_Suppliers,Gearbox,8,34,Machine_Failure,1122,439,55644.85,0,7.43,81.77,Optimal
+R_Pune,11-10-2024,C,240,238,2,No Defect,Valeo,Body_Parts,14,0,Machine_Failure,1056,537,75576.05,1,0.84,99.17,Optimal
+R_Chakan,06-07-2024,A,201,171,5,No Defect,Bosch,Engine_Parts,12,95,Material_Shortage,902,336,57920.41,4,2.92,85.07,Optimal
+R_Aurangabad,29-01-2024,B,188,188,4,No Defect,Mahindra_Suppliers,Engine_Parts,4,162,Maintenance,612,487,72082.32,1,2.13,100.0,Optimal
+R_Aurangabad,15-08-2024,C,260,232,9,Welding,Bosch,Gearbox,14,40,Power_Failure,1092,504,77225.79,0,3.88,89.23,Optimal
+R_Aurangabad,28-02-2024,C,240,220,6,Welding,ZF,Gearbox,3,180,Material_Shortage,444,530,72766.66,5,2.73,91.67,Below Reorder
+R_Aurangabad,14-08-2024,A,259,248,13,Welding,Continental,Engine_Parts,12,158,Material_Shortage,1053,355,45237.37,1,5.24,95.75,Optimal
+R_Aurangabad,25-09-2024,C,222,213,12,Welding,Continental,Gearbox,9,66,Material_Shortage,1124,573,54742.82,5,5.63,95.95,Optimal
+R_Pune,03-04-2024,A,232,227,6,Painting,Bosch,Gearbox,7,114,Machine_Failure,798,301,69110.51,2,2.64,97.84,Optimal
+R_Chakan,04-06-2024,A,219,211,15,Assembly,Continental,Engine_Parts,5,163,Machine_Failure,233,440,63612.98,3,7.11,96.35,Below Reorder
+R_Chakan,03-04-2024,A,236,219,15,Assembly,Bosch,Electronics,14,154,Maintenance,718,313,55644.73,4,6.85,92.8,Optimal
+R_Aurangabad,04-05-2024,C,213,210,8,Painting,Continental,Body_Parts,13,117,Power_Failure,403,466,49392.69,3,3.81,98.59,Below Reorder
+R_Aurangabad,17-01-2024,C,215,175,13,Welding,Bosch,Body_Parts,10,157,Material_Shortage,663,469,78450.0,5,7.43,81.4,Optimal
+R_Aurangabad,20-03-2024,C,252,236,8,Assembly,ZF,Gearbox,12,5,Power_Failure,1108,395,76122.2,3,3.39,93.65,Optimal
+R_Pune,06-07-2024,C,181,148,12,Electrical,Mahindra_Suppliers,Body_Parts,6,126,Machine_Failure,1134,424,54325.33,0,8.11,81.77,Optimal
+R_Chakan,22-04-2024,B,258,229,15,Assembly,Continental,Gearbox,10,165,Material_Shortage,1001,589,68999.72,4,6.55,88.76,Optimal
+R_Pune,07-02-2024,C,259,226,12,Painting,Continental,Engine_Parts,9,159,Material_Shortage,305,464,49163.99,5,5.31,87.26,Below Reorder
+R_Pune,10-01-2024,A,183,143,11,Welding,Mahindra_Suppliers,Gearbox,11,32,Machine_Failure,994,548,70416.11,5,7.69,78.14,Optimal
+R_Pune,01-02-2024,C,199,169,5,Electrical,Continental,Electronics,11,85,Machine_Failure,605,562,45369.34,0,2.96,84.92,Optimal
+R_Aurangabad,18-07-2024,A,188,177,3,Assembly,Bosch,Gearbox,9,142,Power_Failure,284,352,59902.92,0,1.69,94.15,Below Reorder
+R_Pune,04-04-2024,C,184,165,8,Welding,ZF,Engine_Parts,3,114,Machine_Failure,521,374,56725.27,2,4.85,89.67,Optimal
+R_Chakan,03-03-2024,B,227,207,8,Welding,Mahindra_Suppliers,Gearbox,11,123,Maintenance,758,374,69512.68,3,3.86,91.19,Optimal
+R_Pune,01-07-2024,B,260,246,10,Assembly,Bosch,Electronics,8,58,Power_Failure,572,551,67602.89,3,4.07,94.62,Optimal
+R_Pune,29-05-2024,C,203,177,10,Welding,Mahindra_Suppliers,Electronics,15,59,Power_Failure,224,380,70678.52,0,5.65,87.19,Below Reorder
+R_Pune,19-02-2024,C,258,255,5,Electrical,ZF,Electronics,4,90,Material_Shortage,631,511,79894.19,4,1.96,98.84,Optimal
+R_Chakan,23-07-2024,A,191,155,3,Painting,Valeo,Body_Parts,14,86,Machine_Failure,784,588,76014.11,3,1.94,81.15,Optimal
+R_Pune,08-10-2024,C,232,221,7,Painting,Continental,Gearbox,11,115,Material_Shortage,1117,317,54332.14,0,3.17,95.26,Optimal
+R_Chakan,11-08-2024,B,202,180,2,Assembly,Continental,Engine_Parts,3,7,Material_Shortage,1181,532,65013.14,1,1.11,89.11,Optimal
+R_Pune,22-03-2024,C,183,164,9,Electrical,Valeo,Engine_Parts,6,127,Material_Shortage,1121,518,77246.18,0,5.49,89.62,Optimal
+R_Chakan,21-05-2024,B,260,244,4,Painting,ZF,Electronics,8,160,Power_Failure,543,465,68386.92,0,1.64,93.85,Optimal
+R_Pune,23-03-2024,B,219,179,6,Welding,Bosch,Electronics,4,54,Machine_Failure,345,350,61001.44,0,3.35,81.74,Below Reorder
+R_Chakan,21-05-2024,B,247,236,6,No Defect,Mahindra_Suppliers,Gearbox,7,84,Power_Failure,998,339,66843.69,2,2.54,95.55,Optimal
+R_Pune,17-09-2024,A,201,192,4,Welding,Valeo,Engine_Parts,8,157,Maintenance,689,597,49689.96,1,2.08,95.52,Optimal
+R_Pune,04-10-2024,B,203,183,0,Electrical,Mahindra_Suppliers,Engine_Parts,14,107,Material_Shortage,759,451,71352.14,0,0.0,90.15,Optimal
+R_Aurangabad,30-06-2024,C,212,187,3,Painting,Mahindra_Suppliers,Body_Parts,8,172,Maintenance,824,516,75301.89,5,1.6,88.21,Optimal
+R_Chakan,19-04-2024,C,223,187,6,Assembly,Bosch,Gearbox,9,151,Power_Failure,1034,544,63831.71,3,3.21,83.86,Optimal
+R_Aurangabad,18-10-2024,A,219,213,15,Welding,Mahindra_Suppliers,Electronics,9,50,Power_Failure,664,369,58128.9,1,7.04,97.26,Optimal
+R_Aurangabad,15-02-2024,A,217,196,4,Electrical,Mahindra_Suppliers,Engine_Parts,2,80,Maintenance,287,415,69638.43,0,2.04,90.32,Below Reorder
+R_Pune,15-01-2024,B,251,220,10,Painting,Valeo,Engine_Parts,9,2,Maintenance,359,531,74454.0,4,4.55,87.65,Below Reorder
+R_Aurangabad,03-07-2024,B,188,183,12,Welding,Continental,Electronics,10,19,Material_Shortage,754,400,75726.07,4,6.56,97.34,Optimal
+R_Pune,24-07-2024,B,208,173,3,Painting,Bosch,Gearbox,12,46,Power_Failure,820,320,57006.33,3,1.73,83.17,Optimal
+R_Chakan,29-07-2024,B,206,167,10,Assembly,Mahindra_Suppliers,Electronics,14,85,Power_Failure,1142,333,45077.01,2,5.99,81.07,Optimal
+R_Chakan,05-09-2024,C,250,217,14,Painting,Mahindra_Suppliers,Gearbox,5,140,Power_Failure,628,502,47171.13,0,6.45,86.8,Optimal
+R_Pune,21-08-2024,B,229,202,3,Electrical,Continental,Electronics,8,170,Maintenance,1076,573,54244.1,0,1.49,88.21,Optimal
+R_Pune,22-05-2024,B,246,245,7,Painting,Mahindra_Suppliers,Electronics,4,142,Power_Failure,221,332,54078.74,3,2.86,99.59,Below Reorder
+R_Chakan,02-04-2024,B,216,179,2,Painting,Continental,Engine_Parts,9,161,Power_Failure,1083,590,57198.64,0,1.12,82.87,Optimal
+R_Chakan,20-03-2024,C,243,230,2,Welding,Bosch,Electronics,14,29,Maintenance,828,370,76643.86,5,0.87,94.65,Optimal
+R_Chakan,11-03-2024,A,220,199,4,Painting,Continental,Electronics,3,66,Maintenance,230,513,60317.73,4,2.01,90.45,Below Reorder
+R_Chakan,28-06-2024,B,216,191,5,No Defect,Bosch,Body_Parts,8,148,Power_Failure,632,557,67105.28,2,2.62,88.43,Optimal
+R_Pune,22-06-2024,B,251,215,13,Painting,Continental,Engine_Parts,12,130,Maintenance,1130,437,79095.98,3,6.05,85.66,Optimal
+R_Chakan,04-07-2024,A,206,186,4,No Defect,Continental,Engine_Parts,7,23,Material_Shortage,730,474,74956.4,1,2.15,90.29,Optimal
+R_Chakan,09-09-2024,A,201,180,14,No Defect,Bosch,Electronics,6,37,Material_Shortage,1195,397,56801.72,4,7.78,89.55,Optimal
+R_Pune,30-07-2024,C,225,225,2,Painting,Mahindra_Suppliers,Gearbox,15,129,Maintenance,584,306,47048.61,5,0.89,100.0,Optimal
+R_Chakan,24-06-2024,A,206,198,10,No Defect,Mahindra_Suppliers,Body_Parts,10,101,Machine_Failure,677,422,65496.52,4,5.05,96.12,Optimal
+R_Pune,16-08-2024,B,216,205,5,Assembly,Continental,Body_Parts,7,1,Material_Shortage,722,451,64246.0,5,2.44,94.91,Optimal
+R_Chakan,29-09-2024,C,211,186,13,Electrical,Bosch,Body_Parts,13,144,Material_Shortage,809,454,70574.43,4,6.99,88.15,Optimal
+R_Pune,11-09-2024,A,181,144,1,Assembly,Valeo,Gearbox,5,64,Maintenance,1168,505,68442.14,1,0.69,79.56,Optimal
+R_Chakan,04-02-2024,B,227,212,4,No Defect,Valeo,Body_Parts,13,154,Material_Shortage,925,498,49668.92,1,1.89,93.39,Optimal
+R_Aurangabad,13-09-2024,B,242,231,2,Painting,ZF,Electronics,11,74,Maintenance,765,584,64552.93,4,0.87,95.45,Optimal
+R_Chakan,10-03-2024,C,211,193,5,No Defect,Mahindra_Suppliers,Body_Parts,6,154,Maintenance,211,401,79716.38,3,2.59,91.47,Below Reorder
+R_Aurangabad,28-09-2024,B,231,205,6,Painting,Continental,Body_Parts,7,35,Maintenance,980,415,46574.63,1,2.93,88.74,Optimal
+R_Chakan,01-04-2024,B,227,220,0,Assembly,ZF,Electronics,15,5,Material_Shortage,416,479,46713.51,4,0.0,96.92,Below Reorder
+R_Chakan,05-01-2024,B,247,212,2,Painting,Mahindra_Suppliers,Engine_Parts,11,129,Maintenance,529,524,57969.35,3,0.94,85.83,Optimal
+R_Chakan,15-08-2024,B,188,173,1,Electrical,Bosch,Engine_Parts,5,7,Maintenance,368,367,66172.87,3,0.58,92.02,Optimal
+R_Chakan,25-10-2024,B,203,170,14,Painting,Bosch,Electronics,3,73,Maintenance,1020,490,61083.32,5,8.24,83.74,Optimal
+R_Chakan,14-09-2024,A,242,226,0,Electrical,Bosch,Electronics,15,22,Material_Shortage,628,557,67192.23,4,0.0,93.39,Optimal
+R_Pune,01-01-2024,C,252,237,10,No Defect,Continental,Electronics,15,36,Maintenance,823,390,52329.77,0,4.22,94.05,Optimal
+R_Chakan,11-06-2024,C,192,159,3,No Defect,Continental,Engine_Parts,13,130,Power_Failure,461,400,51403.0,4,1.89,82.81,Optimal
+R_Pune,05-05-2024,B,253,224,8,Welding,Valeo,Gearbox,11,65,Maintenance,375,423,45421.03,0,3.57,88.54,Below Reorder
+R_Pune,12-07-2024,A,229,212,2,Painting,Bosch,Electronics,10,135,Maintenance,1099,392,64186.09,0,0.94,92.58,Optimal
+R_Aurangabad,30-05-2024,B,202,192,6,Painting,Valeo,Gearbox,9,159,Material_Shortage,241,439,56124.99,2,3.12,95.05,Below Reorder
+R_Aurangabad,17-09-2024,C,223,197,13,Electrical,Bosch,Gearbox,3,96,Maintenance,954,396,74532.69,2,6.6,88.34,Optimal
+R_Chakan,04-03-2024,A,258,247,4,No Defect,ZF,Body_Parts,9,46,Maintenance,1118,309,70272.16,4,1.62,95.74,Optimal
+R_Aurangabad,13-02-2024,B,244,206,3,Assembly,Mahindra_Suppliers,Engine_Parts,8,14,Machine_Failure,947,491,75200.67,2,1.46,84.43,Optimal
+R_Aurangabad,29-06-2024,B,260,260,10,Painting,ZF,Electronics,11,29,Power_Failure,957,578,66647.95,3,3.85,100.0,Optimal
+R_Aurangabad,01-06-2024,C,208,200,2,Electrical,Bosch,Electronics,5,34,Machine_Failure,755,548,46690.77,5,1.0,96.15,Optimal
+R_Aurangabad,11-06-2024,B,260,240,0,Welding,Continental,Body_Parts,4,124,Machine_Failure,475,354,64970.18,3,0.0,92.31,Optimal
+R_Pune,23-03-2024,B,226,187,2,Electrical,Valeo,Gearbox,8,113,Power_Failure,400,460,52451.43,4,1.07,82.74,Below Reorder
+R_Chakan,03-10-2024,B,217,181,11,Painting,Bosch,Gearbox,5,141,Material_Shortage,694,482,57787.4,2,6.08,83.41,Optimal
+R_Pune,20-09-2024,C,193,166,3,Electrical,Mahindra_Suppliers,Body_Parts,13,57,Maintenance,215,492,65026.21,5,1.81,86.01,Below Reorder
+R_Aurangabad,27-08-2024,C,244,234,11,Welding,ZF,Electronics,3,63,Maintenance,490,314,62909.68,2,4.7,95.9,Optimal
+R_Aurangabad,20-05-2024,C,187,153,12,Painting,Mahindra_Suppliers,Electronics,15,118,Maintenance,661,433,69855.8,5,7.84,81.82,Optimal
+R_Chakan,08-07-2024,C,225,197,12,Painting,ZF,Body_Parts,2,73,Maintenance,1159,564,58796.19,1,6.09,87.56,Optimal
+R_Aurangabad,21-04-2024,C,245,231,9,Welding,Mahindra_Suppliers,Engine_Parts,11,5,Power_Failure,930,394,67447.93,3,3.9,94.29,Optimal
+R_Pune,08-09-2024,A,203,173,1,Welding,Continental,Electronics,10,111,Machine_Failure,381,379,69350.25,0,0.58,85.22,Optimal
+R_Chakan,30-03-2024,C,228,206,2,Electrical,Continental,Body_Parts,3,151,Maintenance,637,370,66963.65,1,0.97,90.35,Optimal
+R_Chakan,05-05-2024,C,252,249,4,Painting,Mahindra_Suppliers,Electronics,13,68,Maintenance,825,413,56839.92,1,1.61,98.81,Optimal
+R_Chakan,16-03-2024,C,209,194,2,No Defect,Mahindra_Suppliers,Body_Parts,12,125,Power_Failure,1015,427,67896.91,2,1.03,92.82,Optimal
+R_Aurangabad,07-09-2024,C,225,213,2,Welding,Valeo,Electronics,10,11,Material_Shortage,824,398,75524.75,0,0.94,94.67,Optimal
+R_Aurangabad,30-09-2024,A,239,233,1,Welding,Continental,Body_Parts,14,155,Material_Shortage,786,309,77256.03,3,0.43,97.49,Optimal
+R_Aurangabad,07-09-2024,C,220,181,10,Welding,Mahindra_Suppliers,Gearbox,8,100,Maintenance,388,545,70958.62,3,5.52,82.27,Below Reorder
+R_Chakan,24-05-2024,B,250,228,13,Painting,Bosch,Electronics,3,74,Material_Shortage,512,325,61910.54,2,5.7,91.2,Optimal
+R_Chakan,05-01-2024,A,249,213,5,Assembly,Continental,Electronics,6,126,Power_Failure,951,362,56003.98,2,2.35,85.54,Optimal
+R_Pune,28-08-2024,B,246,208,5,Welding,ZF,Engine_Parts,2,72,Machine_Failure,499,404,67125.74,5,2.4,84.55,Optimal
+R_Aurangabad,27-09-2024,B,256,249,6,Electrical,Valeo,Electronics,10,62,Machine_Failure,1161,410,48398.9,4,2.41,97.27,Optimal
+R_Chakan,20-04-2024,B,186,148,10,Welding,Bosch,Electronics,4,83,Material_Shortage,1036,332,65254.13,2,6.76,79.57,Optimal
+R_Aurangabad,08-06-2024,B,186,157,15,Assembly,Bosch,Gearbox,6,165,Power_Failure,1161,475,59983.14,3,9.55,84.41,Optimal
+R_Chakan,03-04-2024,C,183,155,0,No Defect,Valeo,Gearbox,7,89,Power_Failure,452,472,76784.74,4,0.0,84.7,Below Reorder
+R_Pune,25-02-2024,A,200,189,6,Electrical,ZF,Engine_Parts,9,117,Machine_Failure,1108,500,75231.06,4,3.17,94.5,Optimal
+R_Aurangabad,16-08-2024,C,258,233,6,Welding,Bosch,Body_Parts,13,47,Maintenance,1030,562,67364.13,3,2.58,90.31,Optimal
+R_Aurangabad,15-01-2024,A,248,213,6,Welding,ZF,Engine_Parts,6,167,Maintenance,477,398,74314.91,2,2.82,85.89,Optimal
+R_Pune,13-02-2024,A,181,173,15,No Defect,ZF,Engine_Parts,2,150,Maintenance,1153,353,48820.93,0,8.67,95.58,Optimal
+R_Pune,01-04-2024,B,240,228,12,Welding,Mahindra_Suppliers,Engine_Parts,8,135,Maintenance,387,439,71273.0,4,5.26,95.0,Below Reorder
+R_Pune,21-02-2024,B,219,205,3,Electrical,Valeo,Electronics,11,179,Material_Shortage,548,360,55011.8,5,1.46,93.61,Optimal
+R_Chakan,25-05-2024,A,187,159,11,No Defect,Mahindra_Suppliers,Gearbox,3,97,Material_Shortage,1191,336,59499.39,3,6.92,85.03,Optimal
+R_Pune,04-01-2024,C,231,214,3,Painting,Bosch,Engine_Parts,5,83,Power_Failure,298,428,73716.96,5,1.4,92.64,Below Reorder
+R_Pune,19-04-2024,B,199,166,13,Assembly,Valeo,Body_Parts,13,142,Machine_Failure,612,516,53169.15,2,7.83,83.42,Optimal
+R_Chakan,04-08-2024,A,206,181,12,Assembly,ZF,Gearbox,3,3,Machine_Failure,255,379,66209.75,2,6.63,87.86,Below Reorder
+R_Pune,10-07-2024,C,190,179,5,No Defect,Continental,Body_Parts,11,57,Power_Failure,991,393,60606.91,3,2.79,94.21,Optimal
+R_Pune,18-04-2024,B,253,236,13,Painting,Bosch,Gearbox,2,50,Material_Shortage,744,501,79501.95,0,5.51,93.28,Optimal
+R_Pune,25-03-2024,B,242,236,8,Welding,Mahindra_Suppliers,Gearbox,14,177,Power_Failure,850,364,56748.43,0,3.39,97.52,Optimal
+R_Aurangabad,24-05-2024,A,195,194,8,No Defect,ZF,Body_Parts,14,145,Material_Shortage,214,349,72064.55,4,4.12,99.49,Below Reorder
+R_Aurangabad,20-08-2024,C,258,230,11,Painting,Bosch,Electronics,14,4,Maintenance,952,489,71297.12,3,4.78,89.15,Optimal
+R_Aurangabad,17-03-2024,A,243,239,15,Painting,Mahindra_Suppliers,Gearbox,3,35,Material_Shortage,926,388,76861.35,1,6.28,98.35,Optimal
+R_Pune,11-03-2024,C,242,229,2,No Defect,ZF,Electronics,7,81,Machine_Failure,682,579,50567.13,0,0.87,94.63,Optimal
+R_Chakan,03-01-2024,C,255,238,12,Welding,Mahindra_Suppliers,Engine_Parts,10,106,Material_Shortage,943,419,53680.56,2,5.04,93.33,Optimal
+R_Aurangabad,30-05-2024,C,238,202,15,Assembly,ZF,Gearbox,7,104,Material_Shortage,269,475,66501.83,0,7.43,84.87,Below Reorder
+R_Aurangabad,30-08-2024,A,195,160,9,Painting,Mahindra_Suppliers,Electronics,11,96,Maintenance,483,452,73220.58,3,5.62,82.05,Optimal
+R_Chakan,07-03-2024,C,228,218,6,No Defect,Bosch,Gearbox,3,86,Power_Failure,520,368,61059.24,1,2.75,95.61,Optimal
+R_Aurangabad,29-08-2024,B,182,144,4,Assembly,Valeo,Electronics,2,161,Machine_Failure,991,450,70528.11,3,2.78,79.12,Optimal
+R_Pune,03-02-2024,B,191,159,9,Painting,Bosch,Engine_Parts,11,132,Machine_Failure,300,583,63846.4,5,5.66,83.25,Below Reorder
+R_Pune,13-10-2024,B,235,196,4,Welding,Bosch,Gearbox,2,171,Material_Shortage,1094,391,74782.73,2,2.04,83.4,Optimal
+R_Pune,29-01-2024,C,218,214,5,Assembly,Mahindra_Suppliers,Body_Parts,12,98,Material_Shortage,1187,514,45400.85,2,2.34,98.17,Optimal
+R_Pune,11-10-2024,C,240,227,14,Electrical,Valeo,Electronics,11,148,Power_Failure,828,423,70680.43,0,6.17,94.58,Optimal
+R_Pune,28-05-2024,B,184,169,7,Welding,Valeo,Engine_Parts,6,139,Machine_Failure,211,491,59047.06,5,4.14,91.85,Below Reorder
+R_Pune,23-05-2024,A,213,204,14,Painting,Continental,Electronics,13,146,Maintenance,699,432,62020.06,0,6.86,95.77,Optimal
+R_Aurangabad,31-05-2024,B,244,228,10,Assembly,Continental,Gearbox,5,154,Maintenance,339,327,47973.99,1,4.39,93.44,Optimal
